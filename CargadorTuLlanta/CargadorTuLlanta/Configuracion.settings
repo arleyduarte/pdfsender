@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CargadorTuLlanta" GeneratedClassName="Configuracion">
+  <Profiles />
+  <Settings>
+    <Setting Name="Plano_Clientes" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Users\Arley\Desktop\PLACLI</Value>
+    </Setting>
+    <Setting Name="Plano_Productos" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Users\Arley\Desktop\PLAPRO</Value>
+    </Setting>
+    <Setting Name="Plano_Precios" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Users\Arley\Desktop\PLAPRE</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

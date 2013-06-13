@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="60a45525-750e-4b8e-b0f0-353fdebdedbe" name="Arley@ARLEY-PC 2013-06-11 21:53:51" runUser="Arley-PC\Arley" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="c07f10f4-cfec-473f-9ccc-a01ae620beee">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Arley_ARLEY-PC 2013-06-11 21_53_51">
+      <DeploymentItem filename="D:\workspaceNet\CargadorTuLlanta\CargadorTuLlanta\bin\Debug\CargadorTuLlanta.exe" />
+      <DeploymentItem filename="D:\Dropbox\Proyectos\2011\PP023-Optica\Codigo\Consola\U2StatusUpdater\U2StatusUpdater\bin\Debug\log4net.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-11T21:53:51.0500629-04:00" queuing="2013-06-11T21:53:51.1920710-04:00" start="2013-06-11T21:53:51.2580748-04:00" finish="2013-06-11T21:53:51.8111064-04:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="getProductoTest" storage="d:\workspacenet\cargadortullanta\testadapterproduct\bin\debug\testadapterproduct.dll" id="7a450593-6714-08a5-412f-e931a6418b99">
+      <Execution id="59b34d60-72ad-479a-9437-e8378c2ac9ab" />
+      <TestMethod codeBase="D:/workspaceNet/CargadorTuLlanta/TestAdapterProduct/bin/Debug/TestAdapterProduct.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAdapterProduct.AdapterProductoTest, TestAdapterProduct, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getProductoTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7a450593-6714-08a5-412f-e931a6418b99" executionId="59b34d60-72ad-479a-9437-e8378c2ac9ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="59b34d60-72ad-479a-9437-e8378c2ac9ab" testId="7a450593-6714-08a5-412f-e931a6418b99" testName="getProductoTest" computerName="ARLEY-PC" duration="00:00:00.0749502" startTime="2013-06-11T21:53:51.2710755-04:00" endTime="2013-06-11T21:53:51.7331020-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59b34d60-72ad-479a-9437-e8378c2ac9ab">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestAdapterProduct.AdapterProductoTest.getProductoTest() in D:\workspaceNet\CargadorTuLlanta\TestAdapterProduct\AdapterProductoTest.cs:line 94
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

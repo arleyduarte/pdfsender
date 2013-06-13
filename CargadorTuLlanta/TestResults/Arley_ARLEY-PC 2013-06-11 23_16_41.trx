@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="09a8237e-e8f9-48ff-a58b-c2c1d7a93626" name="Arley@ARLEY-PC 2013-06-11 23:16:41" runUser="Arley-PC\Arley" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="c07f10f4-cfec-473f-9ccc-a01ae620beee">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Arley_ARLEY-PC 2013-06-11 23_16_41">
+      <DeploymentItem filename="D:\workspaceNet\CargadorTuLlanta\CargadorTuLlanta\bin\Debug\CargadorTuLlanta.exe" />
+      <DeploymentItem filename="D:\Dropbox\Proyectos\2011\PP023-Optica\Codigo\Consola\U2StatusUpdater\U2StatusUpdater\bin\Debug\log4net.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-11T23:16:41.0613313-04:00" queuing="2013-06-11T23:16:43.6964820-04:00" start="2013-06-11T23:16:43.8554911-04:00" finish="2013-06-11T23:16:59.9234101-04:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="3" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="2" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="ARLEY-PC" outcome="Error" timestamp="2013-06-11T23:16:59.9004088-04:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="getClienteTest" storage="d:\workspacenet\cargadortullanta\testadapterproduct\bin\debug\testadapterproduct.dll" id="045d9f1d-6a8b-f242-3f9e-39d6d703cc6a">
+      <Execution id="5805bbf8-5490-4e25-8f05-b5cabc9666b3" />
+      <TestMethod codeBase="D:/workspaceNet/CargadorTuLlanta/TestAdapterProduct/bin/Debug/TestAdapterProduct.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAdapterProduct.AdapterClienteTest, TestAdapterProduct, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getClienteTest" />
+    </UnitTest>
+    <UnitTest name="getPreciosTest" storage="d:\workspacenet\cargadortullanta\testadapterproduct\bin\debug\testadapterproduct.dll" id="006226ec-d3ef-c5f2-2bab-4e023406ad6c">
+      <Execution id="79b9f4d1-fa09-4bf6-8d50-893c62ba2482" />
+      <TestMethod codeBase="D:/workspaceNet/CargadorTuLlanta/TestAdapterProduct/bin/Debug/TestAdapterProduct.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAdapterProduct.AdapterPrecioTest, TestAdapterProduct, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getPreciosTest" />
+    </UnitTest>
+    <UnitTest name="getProductoTest" storage="d:\workspacenet\cargadortullanta\testadapterproduct\bin\debug\testadapterproduct.dll" id="7a450593-6714-08a5-412f-e931a6418b99">
+      <Execution id="abcecf8d-901c-4768-8a9e-1122ebb579ce" />
+      <TestMethod codeBase="D:/workspaceNet/CargadorTuLlanta/TestAdapterProduct/bin/Debug/TestAdapterProduct.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAdapterProduct.AdapterProductoTest, TestAdapterProduct, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getProductoTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="006226ec-d3ef-c5f2-2bab-4e023406ad6c" executionId="79b9f4d1-fa09-4bf6-8d50-893c62ba2482" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="045d9f1d-6a8b-f242-3f9e-39d6d703cc6a" executionId="5805bbf8-5490-4e25-8f05-b5cabc9666b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a450593-6714-08a5-412f-e931a6418b99" executionId="abcecf8d-901c-4768-8a9e-1122ebb579ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="79b9f4d1-fa09-4bf6-8d50-893c62ba2482" testId="006226ec-d3ef-c5f2-2bab-4e023406ad6c" testName="getPreciosTest" computerName="ARLEY-PC" duration="00:00:15.9329113" startTime="2013-06-11T23:16:43.9764980-04:00" endTime="2013-06-11T23:16:59.9094093-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79b9f4d1-fa09-4bf6-8d50-893c62ba2482">
+    </UnitTestResult>
+    <UnitTestResult executionId="5805bbf8-5490-4e25-8f05-b5cabc9666b3" testId="045d9f1d-6a8b-f242-3f9e-39d6d703cc6a" testName="getClienteTest" computerName="ARLEY-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5805bbf8-5490-4e25-8f05-b5cabc9666b3">
+    </UnitTestResult>
+    <UnitTestResult executionId="abcecf8d-901c-4768-8a9e-1122ebb579ce" testId="7a450593-6714-08a5-412f-e931a6418b99" testName="getProductoTest" computerName="ARLEY-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="abcecf8d-901c-4768-8a9e-1122ebb579ce">
+    </UnitTestResult>
+  </Results>
+</TestRun>

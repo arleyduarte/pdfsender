@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="441ad211-c0e8-4b8f-8a8e-00fec8c94463" name="Arley@ARLEY-PC 2013-06-12 01:03:28" runUser="Arley-PC\Arley" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="c07f10f4-cfec-473f-9ccc-a01ae620beee">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Arley_ARLEY-PC 2013-06-12 01_03_28">
+      <DeploymentItem filename="D:\workspaceNet\CargadorTuLlanta\CargadorTuLlanta\bin\Debug\CargadorTuLlanta.exe" />
+      <DeploymentItem filename="D:\Dropbox\Proyectos\2011\PP023-Optica\Codigo\Consola\U2StatusUpdater\U2StatusUpdater\bin\Debug\log4net.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-12T01:03:28.4388123-04:00" queuing="2013-06-12T01:03:31.6909983-04:00" start="2013-06-12T01:03:31.8780090-04:00" finish="2013-06-12T01:04:35.8256666-04:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" error="0" failed="1" timeout="0" aborted="0" inconclusive="2" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="getClienteTest" storage="d:\workspacenet\cargadortullanta\testadapterproduct\bin\debug\testadapterproduct.dll" id="045d9f1d-6a8b-f242-3f9e-39d6d703cc6a">
+      <Execution id="e8661dbc-3c4c-42b6-ad81-fe7e072741a6" />
+      <TestMethod codeBase="D:/workspaceNet/CargadorTuLlanta/TestAdapterProduct/bin/Debug/TestAdapterProduct.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAdapterProduct.AdapterClienteTest, TestAdapterProduct, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getClienteTest" />
+    </UnitTest>
+    <UnitTest name="getPreciosTest" storage="d:\workspacenet\cargadortullanta\testadapterproduct\bin\debug\testadapterproduct.dll" id="006226ec-d3ef-c5f2-2bab-4e023406ad6c">
+      <Execution id="1eec6153-5762-4679-9bc7-815495727fd9" />
+      <TestMethod codeBase="D:/workspaceNet/CargadorTuLlanta/TestAdapterProduct/bin/Debug/TestAdapterProduct.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAdapterProduct.AdapterPrecioTest, TestAdapterProduct, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getPreciosTest" />
+    </UnitTest>
+    <UnitTest name="getProductoTest" storage="d:\workspacenet\cargadortullanta\testadapterproduct\bin\debug\testadapterproduct.dll" id="7a450593-6714-08a5-412f-e931a6418b99">
+      <Execution id="00c2ad0e-3b2e-477f-9881-f64235c463f3" />
+      <TestMethod codeBase="D:/workspaceNet/CargadorTuLlanta/TestAdapterProduct/bin/Debug/TestAdapterProduct.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAdapterProduct.AdapterProductoTest, TestAdapterProduct, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getProductoTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="006226ec-d3ef-c5f2-2bab-4e023406ad6c" executionId="1eec6153-5762-4679-9bc7-815495727fd9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="045d9f1d-6a8b-f242-3f9e-39d6d703cc6a" executionId="e8661dbc-3c4c-42b6-ad81-fe7e072741a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a450593-6714-08a5-412f-e931a6418b99" executionId="00c2ad0e-3b2e-477f-9881-f64235c463f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1eec6153-5762-4679-9bc7-815495727fd9" testId="006226ec-d3ef-c5f2-2bab-4e023406ad6c" testName="getPreciosTest" computerName="ARLEY-PC" duration="00:00:56.8064166" startTime="2013-06-12T01:03:31.9960158-04:00" endTime="2013-06-12T01:04:29.8633256-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1eec6153-5762-4679-9bc7-815495727fd9">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;&gt;. Actual:&lt;140000&gt;. </Message>
+          <StackTrace>   at TestAdapterProduct.AdapterPrecioTest.getPreciosTest() in D:\workspaceNet\CargadorTuLlanta\TestAdapterProduct\AdapterPrecioTest.cs:line 81
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e8661dbc-3c4c-42b6-ad81-fe7e072741a6" testId="045d9f1d-6a8b-f242-3f9e-39d6d703cc6a" testName="getClienteTest" computerName="ARLEY-PC" duration="00:00:03.6342808" startTime="2013-06-12T01:04:29.8743262-04:00" endTime="2013-06-12T01:04:33.5285352-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8661dbc-3c4c-42b6-ad81-fe7e072741a6">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestAdapterProduct.AdapterClienteTest.getClienteTest() in D:\workspaceNet\CargadorTuLlanta\TestAdapterProduct\AdapterClienteTest.cs:line 85
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="00c2ad0e-3b2e-477f-9881-f64235c463f3" testId="7a450593-6714-08a5-412f-e931a6418b99" testName="getProductoTest" computerName="ARLEY-PC" duration="00:00:01.9042099" startTime="2013-06-12T01:04:33.5585369-04:00" endTime="2013-06-12T01:04:35.4776467-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00c2ad0e-3b2e-477f-9881-f64235c463f3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestAdapterProduct.AdapterProductoTest.getProductoTest() in D:\workspaceNet\CargadorTuLlanta\TestAdapterProduct\AdapterProductoTest.cs:line 94
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

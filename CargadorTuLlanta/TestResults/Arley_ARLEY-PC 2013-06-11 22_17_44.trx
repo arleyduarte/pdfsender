@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2f140f5d-fdef-4c57-8aeb-b4e024fdd251" name="Arley@ARLEY-PC 2013-06-11 22:17:44" runUser="Arley-PC\Arley" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="c07f10f4-cfec-473f-9ccc-a01ae620beee">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Arley_ARLEY-PC 2013-06-11 22_17_44">
+      <DeploymentItem filename="D:\workspaceNet\CargadorTuLlanta\CargadorTuLlanta\bin\Debug\CargadorTuLlanta.exe" />
+      <DeploymentItem filename="D:\Dropbox\Proyectos\2011\PP023-Optica\Codigo\Consola\U2StatusUpdater\U2StatusUpdater\bin\Debug\log4net.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-06-11T22:17:44.3250415-04:00" queuing="2013-06-11T22:17:47.1622038-04:00" start="2013-06-11T22:17:47.4152183-04:00" finish="2013-06-11T22:18:48.8687332-04:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="ARLEY-PC" outcome="Error" timestamp="2013-06-11T22:18:48.8617328-04:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="getClienteTest" storage="d:\workspacenet\cargadortullanta\testadapterproduct\bin\debug\testadapterproduct.dll" id="045d9f1d-6a8b-f242-3f9e-39d6d703cc6a">
+      <Execution id="258eff0e-65e3-4042-a59c-5668c619309d" />
+      <TestMethod codeBase="D:/workspaceNet/CargadorTuLlanta/TestAdapterProduct/bin/Debug/TestAdapterProduct.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAdapterProduct.AdapterClienteTest, TestAdapterProduct, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getClienteTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="045d9f1d-6a8b-f242-3f9e-39d6d703cc6a" executionId="258eff0e-65e3-4042-a59c-5668c619309d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="258eff0e-65e3-4042-a59c-5668c619309d" testId="045d9f1d-6a8b-f242-3f9e-39d6d703cc6a" testName="getClienteTest" computerName="ARLEY-PC" duration="00:01:01.2935058" startTime="2013-06-11T22:17:47.5752274-04:00" endTime="2013-06-11T22:18:48.8687332-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="258eff0e-65e3-4042-a59c-5668c619309d">
+    </UnitTestResult>
+  </Results>
+</TestRun>
