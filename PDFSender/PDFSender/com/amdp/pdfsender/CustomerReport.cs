@@ -13,6 +13,12 @@ namespace PDFSender.com.amdp.pdfsender
         public String AttachFile { get; set; }
         
         private ArrayList headers = new ArrayList();
+        private ArrayList details = new ArrayList();
+
+        public void addDetailLine(String detail)
+        {
+            details.Add(detail);
+        }
 
         public void addHeaderLine(String headerLine)
         {
@@ -21,9 +27,12 @@ namespace PDFSender.com.amdp.pdfsender
 
         public ArrayList getHeaders()
         {
-            headers.Reverse();
             return headers;
         }
 
+        public ArrayList getDetails()
+        {
+            return details;
+        }
     }
 }

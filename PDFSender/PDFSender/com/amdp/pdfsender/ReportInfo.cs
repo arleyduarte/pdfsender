@@ -16,5 +16,8 @@ namespace PDFSender.com.amdp.pdfsender
         public String Texto { get; set; }
         public String TamanoLetra { get; set; }
         public String Orientacion { get; set; }
+        public String NombreAdjunto { get; set; }
+        public String TopMargin { get; set; }
+        public String BottomMargin { get; set; }
     }
 }

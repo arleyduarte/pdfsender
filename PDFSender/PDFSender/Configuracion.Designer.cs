@@ -25,7 +25,7 @@ namespace PDFSender {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Arley\\Downloads\\PLAMAIL")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Arley\\Downloads\\PLAMAIL2")]
         public string SOURCE_FILE {
             get {
                 return ((string)(this["SOURCE_FILE"]));

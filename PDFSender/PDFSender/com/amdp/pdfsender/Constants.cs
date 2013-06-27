@@ -17,9 +17,12 @@ namespace PDFSender.com.amdp.pdfsender
         public static String TEXTO = "TEXTO";
         public static String TAMANOLET = "TAMANO-LET";
         public static String ORIENT = "ORIENT";
+        public static String NOM_ADJ = "NOM-ADJ";
 
         public static String HEADER_INDICATOR = ".";
 
-        public static Font font = new Font(iTextSharp.text.Font.FontFamily.TIMES_ROMAN, 7);
+        public static Font font = new Font(iTextSharp.text.Font.FontFamily.COURIER, 7);
+        public static int DEFAULT_SIZE = 7;
+        public static int DEFAULT_TOP_MARGIN = 72;
     }
 }

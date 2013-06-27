@@ -68,9 +68,19 @@ namespace PDFSender.com.amdp.utils
                         reportInfo.Orientacion = getSettingValue(line, Constants.ORIENT);
                     }
 
+                    else if (reportInfo.NombreAdjunto == null && line.Contains(Constants.NOM_ADJ))
+                    {
+                        reportInfo.NombreAdjunto = getSettingValue(line, Constants.NOM_ADJ);
+                    }
+
                     else if (line.StartsWith(Constants.HEADER_INDICATOR))
                     {
                         customerReport.addHeaderLine(line);
+                    }
+
+                    else
+                    {
+                        customerReport.addDetailLine(line.Trim());
                     }
 
                 }
