@@ -18,17 +18,40 @@ namespace PDFSender.com.amdp.pdfsender.pdf
         private PdfReader reader = null;
         private int pageHeight;
         private int finalPositionHeaderY;
+        private int topMargin;
+        private int buttonMargin;
+        private int leftMargin = 36;
+        private int fontHeigth;
+        private ArrayList tempFiles = new ArrayList();
+        private ArrayList details  = new ArrayList();
 
         public void buildPDFCustomerReport(CustomerReport customerReport)
         {
-
             this.customerReport = customerReport;
+            loadTemplate();
+
+            int numOfRequiredPages = getNumberOfRequiredPages();
+
+            for (int i = 0; i < numOfRequiredPages; i++)
+            {
+                buildPage();
+            }
+
+        }
 
 
-            String destinationFile = Configuracion.Default.DESTINATION_FOLDER + customerReport.ReportInfo.NombreAdjunto +"_"+ System.DateTime.Now.ToString("ssffff") + ".pdf";
+        public void loadTemplate()
+        {
+                reader = new PdfReader(customerReport.ReportInfo.Fondo);
+                Rectangle pageSize = reader.GetPageSize(1);
+                pageHeight = (int)pageSize.Height;
+                loadData();
+        }
 
-            font.Size = getFontSize();
+        public void buildPage()
+        {
 
+           String destinationFile = Configuracion.Default.DESTINATION_FOLDER + customerReport.ReportInfo.NombreAdjunto +"_tmp_"+ System.DateTime.Now.ToString("ssffff") + ".pdf";
 
             try
             {
@@ -37,27 +60,15 @@ namespace PDFSender.com.amdp.pdfsender.pdf
                  {
                      using (PdfStamper stamper = new PdfStamper(reader, fs))
                      {
-                         PdfContentByte cb = stamper.GetOverContent(1);
 
                          Rectangle pageSize = reader.GetPageSize(1);
                          pageHeight = (int)pageSize.Height;
+                         loadData();
 
 
-                         /*
-                         ColumnText ct = new ColumnText(cb);
-
-
-                         ct.SetSimpleColumn(-9, 0,
-                                   PageSize.LETTER.Width + 9, PageSize.LETTER.Height - 3,
-                                   18, Element.ALIGN_JUSTIFIED);
-
-*/
+                         PdfContentByte cb = stamper.GetOverContent(1);
                          printHeaders(cb);
                          printDetails(cb);
-
-
-
-                        // ct.Go();
                          stamper.Close();
                      }
                  }
@@ -67,18 +78,14 @@ namespace PDFSender.com.amdp.pdfsender.pdf
                 log.Error("No se encontro el archivo template "+io);
             }
 
-
-
-            customerReport.AttachFile = destinationFile;
-
-
+            tempFiles.Add(destinationFile);
 
         }
 
 
         private void printHeaders(PdfContentByte cb)
         {
-            int initHeaderY = pageHeight-getTopMargin();
+            int initHeaderY = pageHeight-topMargin;
             int spaceBetweenHeaders = (int)font.CalculatedSize;
             int positionY = initHeaderY;
 
@@ -88,9 +95,7 @@ namespace PDFSender.com.amdp.pdfsender.pdf
             {
                 Phrase phrase = new Phrase(headerLine, font);
 
-
-
-                ColumnText.ShowTextAligned(cb, Element.ALIGN_LEFT, phrase, 36, positionY, 0);
+                ColumnText.ShowTextAligned(cb, Element.ALIGN_LEFT, phrase, leftMargin, positionY, 0);
                 positionY = positionY - spaceBetweenHeaders;
             }
 
@@ -100,27 +105,94 @@ namespace PDFSender.com.amdp.pdfsender.pdf
         private void printDetails(PdfContentByte cb)
         {
             int initHeaderY = finalPositionHeaderY;
-            int spaceBetweenHeaders = (int)font.CalculatedSize;
             int positionY = initHeaderY;
+            int numOfRequiredPages = getNumberOfRequiredPages();
+            int maxRowsForPage = getMaxNumOfRowsPerPage();
 
-            ArrayList details = customerReport.getDetails();
+            ArrayList removeDetails = new ArrayList();
+
+            int counter = 1;
 
             foreach (String detailLine in details)
             {
 
-                if (detailLine.Length > 95)
+                if (counter > maxRowsForPage)
                 {
-                    String texts = detailLine.Substring(94, 1);
+                    break;
                 }
 
-
                 Phrase phrase = new Phrase(detailLine, font);
-                ColumnText.ShowTextAligned(cb, Element.ALIGN_LEFT, phrase, 36, positionY, 0);
-                positionY = positionY - spaceBetweenHeaders;
+                ColumnText.ShowTextAligned(cb, Element.ALIGN_LEFT, phrase, leftMargin, positionY, 0);
+                positionY = positionY - fontHeigth;
+
+                counter++;
+
+                removeDetails.Add(detailLine);
             }
+
+            updateDetails(removeDetails);
+
         }
 
+        private void updateDetails(ArrayList removeDetails)
+        {
+            foreach (String detailLine in removeDetails)
+            {
+                details.Remove(detailLine);
+            }
 
+            details.Insert(0, "");
+        }
+
+        private int getNumberOfRequiredPages()
+        {
+
+            int numberOfRows = customerReport.getDetails().Count;
+            int requiredHeigth = fontHeigth * numberOfRows;
+
+            int maxRowsPerPage = (pageHeight - (topMargin + buttonMargin)) * fontHeigth;
+            int availableHeight = getAvailableHeigth();
+
+            int numPages = 1;
+
+            if (requiredHeigth > availableHeight)
+            {
+                double dNumPages = Convert.ToDouble(requiredHeigth) / Convert.ToDouble(availableHeight);
+                if ((requiredHeigth % availableHeight) > 1)
+                {
+                    dNumPages++;
+                }
+
+                numPages = (int)dNumPages;
+            }
+
+            return numPages;
+        }
+
+        private int getAvailableHeigth() {
+            return (pageHeight - (topMargin + buttonMargin));
+        }
+
+        private int getMaxNumOfRowsPerPage()
+        {
+            double maxRowsForPage = Convert.ToDouble(getAvailableHeigth()) / Convert.ToDouble(fontHeigth);
+            if ((getAvailableHeigth() % fontHeigth) > 1)
+            {
+                maxRowsForPage++;
+            }
+
+            return (int)maxRowsForPage;
+        }
+
+        private void loadData()
+        {
+
+            font.Size = getFontSize();
+            fontHeigth = (int)font.CalculatedSize;
+            topMargin = getTopMargin();
+            buttonMargin = getButtomMargin();
+            details = customerReport.getDetails();
+        }
 
         private int getFontSize()
         {
@@ -148,6 +220,26 @@ namespace PDFSender.com.amdp.pdfsender.pdf
                 if (customerReport.ReportInfo.TopMargin.Length != 0)
                 {
                     size = Convert.ToInt32(customerReport.ReportInfo.TopMargin);
+                }
+
+
+            }
+            catch (Exception e)
+            {
+                log.Error(e);
+            }
+            return size;
+        }
+
+        private int getButtomMargin()
+        {
+            int size = Constants.DEFAULT_BUTTOM_MARGIN;
+            try
+            {
+
+                if (customerReport.ReportInfo.BottomMargin.Length != 0)
+                {
+                    size = Convert.ToInt32(customerReport.ReportInfo.BottomMargin);
                 }
 
 

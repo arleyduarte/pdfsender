@@ -24,5 +24,6 @@ namespace PDFSender.com.amdp.pdfsender
         public static Font font = new Font(iTextSharp.text.Font.FontFamily.COURIER, 7);
         public static int DEFAULT_SIZE = 7;
         public static int DEFAULT_TOP_MARGIN = 72;
+        public static int DEFAULT_BUTTOM_MARGIN = 100;
     }
 }
