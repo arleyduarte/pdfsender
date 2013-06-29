@@ -7,6 +7,7 @@ using System.IO;
 using iTextSharp.text;
 using log4net;
 using System.Collections;
+using PDFSender.com.amdp.utils;
 
 namespace PDFSender.com.amdp.pdfsender.pdf
 {
@@ -20,62 +21,94 @@ namespace PDFSender.com.amdp.pdfsender.pdf
         private int finalPositionHeaderY;
         private int topMargin;
         private int buttonMargin;
-        private int leftMargin = 36;
+        private int leftMargin;
         private int fontHeigth;
         private ArrayList tempFiles = new ArrayList();
-        private ArrayList details  = new ArrayList();
+        private ArrayList details = new ArrayList();
 
-        public void buildPDFCustomerReport(CustomerReport customerReport)
+        public bool buildPDF(CustomerReport customerReport)
         {
             this.customerReport = customerReport;
-            loadTemplate();
 
-            int numOfRequiredPages = getNumberOfRequiredPages();
-
-            for (int i = 0; i < numOfRequiredPages; i++)
+            if (loadTemplate())
             {
-                buildPage();
+                int numOfRequiredPages = getNumberOfRequiredPages();
+
+                for (int i = 0; i < numOfRequiredPages; i++)
+                {
+                    buildPage();
+                }
+
+                mergePages();
+
+                FileManager fileManager = new FileManager();
+                fileManager.deleteFiles(tempFiles);
+
+                return true;
+            }
+            else
+            {
+                return false;
             }
 
+            
+        }
+
+        private void mergePages()
+        {
+            String destinationFile = Configuracion.Default.DESTINATION_FOLDER + customerReport.ReportInfo.NombreAdjunto + "_" + System.DateTime.Now.ToString("ssffff") + ".pdf";
+            PdfMerge.MergeFiles(destinationFile, getTempSubFiles());
+            customerReport.AttachFile = destinationFile;
         }
 
 
-        public void loadTemplate()
+        private bool loadTemplate()
         {
+            try
+            {
                 reader = new PdfReader(customerReport.ReportInfo.Fondo);
                 Rectangle pageSize = reader.GetPageSize(1);
                 pageHeight = (int)pageSize.Height;
                 loadData();
+
+                return true;
+            }
+            catch (IOException ioe)
+            {
+                log.Error("No se econtro el archivo de FONDO:" +customerReport.ReportInfo.Fondo+" "+ioe);
+                return false;
+            }
+
         }
 
-        public void buildPage()
+        private void buildPage()
         {
 
-           String destinationFile = Configuracion.Default.DESTINATION_FOLDER + customerReport.ReportInfo.NombreAdjunto +"_tmp_"+ System.DateTime.Now.ToString("ssffff") + ".pdf";
+            String destinationFile = Configuracion.Default.DESTINATION_FOLDER + customerReport.ReportInfo.NombreAdjunto + "_tmp_" + System.DateTime.Now.ToString("ssffff") + ".pdf";
 
             try
             {
-                 reader = new PdfReader(customerReport.ReportInfo.Fondo);
-                 using (FileStream fs = new FileStream(destinationFile, FileMode.Create, FileAccess.Write, FileShare.None))
-                 {
-                     using (PdfStamper stamper = new PdfStamper(reader, fs))
-                     {
+                reader = new PdfReader(customerReport.ReportInfo.Fondo);
+                using (FileStream fs = new FileStream(destinationFile, FileMode.Create, FileAccess.Write, FileShare.None))
+                {
+                    using (PdfStamper stamper = new PdfStamper(reader, fs))
+                    {
 
-                         Rectangle pageSize = reader.GetPageSize(1);
-                         pageHeight = (int)pageSize.Height;
-                         loadData();
+                        Rectangle pageSize = reader.GetPageSize(1);
+                        pageHeight = (int)pageSize.Height;
+                        loadData();
 
 
-                         PdfContentByte cb = stamper.GetOverContent(1);
-                         printHeaders(cb);
-                         printDetails(cb);
-                         stamper.Close();
-                     }
-                 }
+                        PdfContentByte cb = stamper.GetOverContent(1);
+                        printHeaders(cb);
+                        printDetails(cb);
+                        stamper.Close();
+                    }
+                }
             }
             catch (IOException io)
             {
-                log.Error("No se encontro el archivo template "+io);
+                log.Error("No se encontro el archivo template " + io);
             }
 
             tempFiles.Add(destinationFile);
@@ -85,7 +118,7 @@ namespace PDFSender.com.amdp.pdfsender.pdf
 
         private void printHeaders(PdfContentByte cb)
         {
-            int initHeaderY = pageHeight-topMargin;
+            int initHeaderY = pageHeight - topMargin;
             int spaceBetweenHeaders = (int)font.CalculatedSize;
             int positionY = initHeaderY;
 
@@ -140,19 +173,16 @@ namespace PDFSender.com.amdp.pdfsender.pdf
             {
                 details.Remove(detailLine);
             }
-
             details.Insert(0, "");
         }
 
+
         private int getNumberOfRequiredPages()
         {
-
             int numberOfRows = customerReport.getDetails().Count;
             int requiredHeigth = fontHeigth * numberOfRows;
-
             int maxRowsPerPage = (pageHeight - (topMargin + buttonMargin)) * fontHeigth;
             int availableHeight = getAvailableHeigth();
-
             int numPages = 1;
 
             if (requiredHeigth > availableHeight)
@@ -169,7 +199,8 @@ namespace PDFSender.com.amdp.pdfsender.pdf
             return numPages;
         }
 
-        private int getAvailableHeigth() {
+        private int getAvailableHeigth()
+        {
             return (pageHeight - (topMargin + buttonMargin));
         }
 
@@ -180,49 +211,30 @@ namespace PDFSender.com.amdp.pdfsender.pdf
             {
                 maxRowsForPage++;
             }
-
             return (int)maxRowsForPage;
         }
 
         private void loadData()
         {
-
-            font.Size = getFontSize();
+            font.Size = getParameterValue(customerReport.ReportInfo.TamanoLetra, Constants.DEFAULT_FONT_SIZE);
             fontHeigth = (int)font.CalculatedSize;
-            topMargin = getTopMargin();
-            buttonMargin = getButtomMargin();
+            topMargin = getParameterValue(customerReport.ReportInfo.TopMargin, Constants.DEFAULT_TOP_MARGIN);
+            buttonMargin = getParameterValue(customerReport.ReportInfo.BottomMargin, Constants.DEFAULT_TOP_MARGIN);
+            leftMargin = getParameterValue(customerReport.ReportInfo.LeftMargin, Constants.DEFAULT_LEFT_MARGIN);
             details = customerReport.getDetails();
         }
 
-        private int getFontSize()
+
+
+        private int getParameterValue(String parameter, int defaultValue)
         {
-            int size = Constants.DEFAULT_SIZE;
+            int size = defaultValue;
             try
             {
-                if (customerReport.ReportInfo.TamanoLetra.Length != 0)
+                if (parameter.Length != 0)
                 {
-                    size = Convert.ToInt32(customerReport.ReportInfo.TamanoLetra);
+                    size = Convert.ToInt32(parameter);
                 }
-
-
-            }catch(Exception e){
-                log.Error(e);
-            }
-            return size;
-        }
-
-        private int getTopMargin()
-        {
-            int size = Constants.DEFAULT_TOP_MARGIN;
-            try
-            {
-
-                if (customerReport.ReportInfo.TopMargin.Length != 0)
-                {
-                    size = Convert.ToInt32(customerReport.ReportInfo.TopMargin);
-                }
-
-
             }
             catch (Exception e)
             {
@@ -231,24 +243,16 @@ namespace PDFSender.com.amdp.pdfsender.pdf
             return size;
         }
 
-        private int getButtomMargin()
+
+        private String[] getTempSubFiles()
         {
-            int size = Constants.DEFAULT_BUTTOM_MARGIN;
-            try
+            String[] invoiceFiles = new String[tempFiles.Count];
+            for (int i = 0; i < tempFiles.Count; i++)
             {
-
-                if (customerReport.ReportInfo.BottomMargin.Length != 0)
-                {
-                    size = Convert.ToInt32(customerReport.ReportInfo.BottomMargin);
-                }
-
-
+                invoiceFiles[i] = tempFiles[i].ToString();
             }
-            catch (Exception e)
-            {
-                log.Error(e);
-            }
-            return size;
+            return invoiceFiles;
         }
+
     }
 }

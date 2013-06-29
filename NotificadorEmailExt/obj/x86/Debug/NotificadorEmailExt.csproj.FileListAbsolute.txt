@@ -1,0 +1,23 @@
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Debug\NotificadorEmailExt.exe.config
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Debug\NotificadorEmailExt.exe
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Debug\NotificadorEmailExt.pdb
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Debug\NotificadorEmailExt.exe
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Debug\NotificadorEmailExt.pdb
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Debug\Log4Net.config
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Debug\NotificadorEmailExt.exe.config
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Debug\NotificadorEmailExt.exe
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Debug\NotificadorEmailExt.pdb
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Debug\log4net.dll
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Debug\log4net.pdb
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Debug\log4net.xml
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Debug\NotificadorEmailExt.exe
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Debug\NotificadorEmailExt.pdb
+D:\workspaceNet\TuLLanta\NotificadorEmailExt\bin\Debug\Log4Net.config
+D:\workspaceNet\TuLLanta\NotificadorEmailExt\bin\Debug\NotificadorEmailExt.exe.config
+D:\workspaceNet\TuLLanta\NotificadorEmailExt\bin\Debug\NotificadorEmailExt.exe
+D:\workspaceNet\TuLLanta\NotificadorEmailExt\bin\Debug\NotificadorEmailExt.pdb
+D:\workspaceNet\TuLLanta\NotificadorEmailExt\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\workspaceNet\TuLLanta\NotificadorEmailExt\obj\x86\Debug\NotificadorEmailExt.exe
+D:\workspaceNet\TuLLanta\NotificadorEmailExt\obj\x86\Debug\NotificadorEmailExt.pdb

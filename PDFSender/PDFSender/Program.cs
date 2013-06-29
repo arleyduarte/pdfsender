@@ -5,6 +5,7 @@ using System.Text;
 using PDFSender.com.amdp.utils;
 using PDFSender.com.amdp.pdfsender;
 using PDFSender.com.amdp.pdfsender.pdf;
+using com.amdp.notificadoremail;
 
 namespace PDFSender
 {
@@ -12,13 +13,22 @@ namespace PDFSender
     {
         static void Main(string[] args)
         {
-            CustomerReportFileAdapter df = new CustomerReportFileAdapter();
-            String filePath = Configuracion.Default.SOURCE_FILE;
-            CustomerReportPDFAdapter pdfA = new CustomerReportPDFAdapter();
             CustomerReport cr = new CustomerReport();
-            df.fillCustomerReport(cr, filePath);
-
-            pdfA.buildPDFCustomerReport(cr);
+            CustomerReportFileAdapter fileAdapter = new CustomerReportFileAdapter();
+            CustomerReportPDFAdapter pdfAdapter = new CustomerReportPDFAdapter();
+            CustomerReportMailAdapter mailAdapter = new CustomerReportMailAdapter();
+            NotificadorEmail notificadorEmail = new NotificadorEmail();
+            
+            if(fileAdapter.fillCustomerReport(cr, Configuracion.Default.SOURCE_FILE)){
+                if (pdfAdapter.buildPDF(cr))
+                {
+                    notificadorEmail.enviarMensaje(mailAdapter.getMailMessage(cr));
+                }
+            }
+     
+            Environment.Exit(0);
         }
+
+
     }
 }

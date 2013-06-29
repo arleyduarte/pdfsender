@@ -9,9 +9,7 @@ namespace PDFSender.com.amdp.pdfsender
     public class CustomerReport
     {
         public ReportInfo ReportInfo { get; set; }
-
         public String AttachFile { get; set; }
-        
         private ArrayList headers = new ArrayList();
         private ArrayList details = new ArrayList();
 

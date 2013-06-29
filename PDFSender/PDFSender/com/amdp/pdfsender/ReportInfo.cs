@@ -19,5 +19,6 @@ namespace PDFSender.com.amdp.pdfsender
         public String NombreAdjunto { get; set; }
         public String TopMargin { get; set; }
         public String BottomMargin { get; set; }
+        public String LeftMargin { get; set; }
     }
 }

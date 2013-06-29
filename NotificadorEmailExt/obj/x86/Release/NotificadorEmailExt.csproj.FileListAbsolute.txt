@@ -1,0 +1,36 @@
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.exe.config
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.exe
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.pdb
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\ResolveAssemblyReference.cache
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\NotificadorEmailExt.exe
+E:\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\NotificadorEmailExt.pdb
+C:\Users\Usuario\Documents\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.exe.config
+C:\Users\Usuario\Documents\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.exe
+C:\Users\Usuario\Documents\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.pdb
+C:\Users\Usuario\Documents\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\NotificadorEmailExt.exe
+C:\Users\Usuario\Documents\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\NotificadorEmailExt.pdb
+C:\Users\Usuario\Documents\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\Log4Net.config
+C:\Users\Usuario\Documents\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\log4net.dll
+C:\Users\Usuario\Documents\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\log4net.pdb
+C:\Users\Usuario\Documents\My Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\log4net.xml
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\Log4Net.config
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.exe.config
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.exe
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.pdb
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\log4net.dll
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\log4net.pdb
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\log4net.xml
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\NotificadorEmailExt.exe
+C:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\NotificadorEmailExt.pdb
+D:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\Log4Net.config
+D:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.exe.config
+D:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.exe
+D:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\NotificadorEmailExt.pdb
+D:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\log4net.dll
+D:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\log4net.pdb
+D:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\bin\Release\log4net.xml
+D:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\NotificadorEmailExt.exe
+D:\Dropbox\Proyectos\Producto\Codigo\Consola\NotificadorEmailExt\obj\x86\Release\NotificadorEmailExt.pdb

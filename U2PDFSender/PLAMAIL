@@ -1,0 +1,172 @@
+FONDO      ..\template.pdf
+DESTINO    arleymauricio@gmail.com
+CC         arleymauricio@gmail.com, arleymauricio@gmail.com
+REMITE     servicioalcliente@u2.com.co 
+ASUNTO     Prueba
+TEXTO	      No olvidar la la solicitud del cliente...
+NOM-ADJ    Lista Productos
+ORIENT     VERTICAL
+TAMANO-LET 7
+MARG-SUP   70
+MARG-INF   100
+MARG-IZQ   50
+.____________________________________________________________________________                                                                      
+. MULTILLANTAS                                                                                                                                                                                
+. MULTILLANTAS LA SABANA                            Lista de Productos                                                                                                                 
+. _________________________________________________________________________________________________________________________________                                                                      
+. Marca          Descripcion                                                    Present      Codigo     Iva  Cod barras                                                                                 
+                                                                                                                                                                                                        
+ ACCELERA        ACCELERA 175-65-14                                                          10002       16  ZPA1756514                                                                                 
+ ACCELERA        ACCELERA 185 R14 ULTRA 2                                                    10003       16  ZPA185R14                                                                                  
+ ACCELERA        ACCELERA 185 R14 ULTRA2                                                     12257       16  ZPA18514                                                                                   
+ ACCELERA        ACCELERA 185-55-15 BETA                                                     10004       16  ZPA1855515                                                                                 
+ ACCELERA        ACCELERA 185-60-14                                                          12258       16  ZPA1856014                                                                                 
+ ACCELERA        ACCELERA 185-60-14 EPSILON                                                  10005       16  ZPA1856014                                                                                 
+ ACCELERA        ACCELERA 185-60-15 ALPHA                                                    10006       16  ZPA1856015                                                                                 
+ ACCELERA        ACCELERA 185-60-15 RHO                                                      12259       16  ZPA1856015RHO                                                                              
+ ACCELERA        ACCELERA 185-65-14                                                          10007       16  ZPA1856514                                                                                 
+ ACCELERA        ACCELERA 185-65-15 ALPHA                                                    10008       16  ZPA1856515                                                                                 
+ ACCELERA        ACCELERA 195 R14 FORCEUM                                                    10009       16  ZPA19514                                                                                   
+ ACCELERA        ACCELERA 195-50-15 651                                                      10010       16  ZPA1955015                                                                                 
+ ACCELERA        ACCELERA 195-50-15 ALPHA                                                    10011       16  ZPA1955015A                                                                                
+ ACCELERA        ACCELERA 195-55-15 ALPHA                                                    10012       16  ZPA1955515                                                                                 
+ ACCELERA        ACCELERA 195-60-15                                                          10013       16  ZPA1956015                                                                                 
+ ACCELERA        ACCELERA 195-65-15 ALPHA                                                    10014       16  ZPA1956515                                                                                 
+ ACCELERA        ACCELERA 205 70 15                                                          10015       16  ZPA2057015                                                                                 
+ ACCELERA        ACCELERA 205-50-15                                                          10016       16  ZPA2055015                                                                                 
+ ACCELERA        ACCELERA 205-50-15 ALPHA                                                    12260       16  ZPA2055015                                                                                 
+ ACCELERA        ACCELERA 205-55-15                                                          10017       16  ZPA2055515                                                                                 
+ ACCELERA        ACCELERA 205-55-16 ALPHA                                                    10018       16  ZPA2055516                                                                                 
+ ACCELERA        ACCELERA 205-60-15                                                          12261       16  ZPA2056015                                                                                 
+ ACCELERA        ACCELERA 205-60-15 ALPHA                                                    10019       16  ZPA2056015                                                                                 
+ ACCELERA        ACCELERA 205-60-16 ALPHA                                                    10020       16  ZPA2056016                                                                                 
+ ACCELERA        ACCELERA 205-65-15                                                          10021       16  ZPA2056515                                                                                 
+ ACCELERA        ACCELERA 215-45-17 ALPHA                                                    10022       16  ZPA2154517                                                                                 
+ ACCELERA        ACCELERA 215-50-17 ALPHA                                                    10023       16  ZPA2155017                                                                                 
+ ACCELERA        ACCELERA 215-55-16 ALPHA                                                    10024       16  ZPA2155516                                                                                 
+ ACCELERA        ACCELERA 215-55-17 ALPHA                                                    10025       16  ZPA2155517                                                                                 
+ ACCELERA        ACCELERA 215-60-16                                                          10026       16  ZPA2156016                                                                                 
+ ACCELERA        ACCELERA 215-65-15 ALPHA                                                    10027       16  ZPA2156515                                                                                 
+ ACCELERA        ACCELERA 215-65-16                                                          10028       16  ZPA2156516                                                                                 
+ ACCELERA        ACCELERA 225-45-17 ALPHA                                                    10029       16  ZPA2254517                                                                                 
+ ACCELERA        ACCELERA 225-45-18 PHI                                                      10030       16  ZPA2254518                                                                                 
+ ACCELERA        ACCELERA 225-50-16 ALPHA                                                    10031       16  ZPA2255016                                                                                 
+ ACCELERA        ACCELERA 225-50-17                                                          10032       16  ZPA2255017                                                                                 
+ ACCELERA        ACCELERA 225-55-16 ALPHA                                                    10033       16  ZPA2255516                                                                                 
+ ACCELERA        ACCELERA 225-55-17 ALPHA                                                    10034       16  ZPA2255517                                                                                 
+ ACCELERA        ACCELERA 225-60-15 ALPHA                                                    10035       16  ZPA2256015                                                                                 
+ ACCELERA        ACCELERA 225-60-16                                                          10036       16  ZPA2256016                                                                                 
+ ACCELERA        ACCELERA 235-45-17 ALPHA                                                    10037       16  ZPA2354517                                                                                 
+ ACCELERA        ACCELERA 235-60-16 PHI                                                      10038       16  ZPA2356016                                                                                 
+ ACCELERA        ACCELERA 235-65-17 IOTA                                                     10039       16  ZPA2356517                                                                                 
+ HANKOOK         HANKOOK 195 60 15 K424                                                      11363       16  H1956515 415                                                                               
+ HANKOOK         HANKOOK 195 65 15  K415                                                     11364       16  H19514819                                                                                  
+ HANKOOK         HANKOOK 195 R14 819                                                         11365       16  H19514                                                                                     
+ HANKOOK         HANKOOK 195 R14 RA08                                                        11366       16  H19550151                                                                                  
+ HANKOOK         HANKOOK 195-50-15 K110                                                      11367       16  H1955015                                                                                   
+ MAXXIS          MAXXIS 165-65-13 899                                                        10489       16  MA1656513                                                                                  
+ PRIMEWELL       PRIMEWELL 195-65-15 PS830                                                   11802       16  TP2055516                                                                                  
+ PRIMEWELL       PRIMEWELL 195-70-14                                                         12638       16  DP1957014                                                                                  
+ PRIMEWELL       PRIMEWELL 205-55-16 PS880                                                   11803       16  TP2156015                                                                                  
+ PRIMEWELL       PRIMEWELL 205-55-16                                                         13348       16  DP2055516                                                                                  
+ PRIMEWELL       PRIMEWELL 215-60-15 PS830                                                   11804       16  R2657516                                                                                   
+ PRIMEWELL       PRIMEWELL 215-60-15                                                         12639       16  DP2156015                                                                                  
+ VARIOS          PROTECTOR CINTURON                                                          13532       16  LUPROTECTOR                                                                                
+ SUMITOMO        SUMITOMO 235-45-17 HTR Z2                                                   12699       16  S2354517                                                                                   
+ SUMITOMO        SUMITOMO 235-45-17 HTRZ2                                                    13394       16  SU2354517                                                                                  
+ SUMITOMO        SUMITOMO 235-45-17 Z2                                                       10898       16  S2354517                                                                                   
+ SUMITOMO        SUMITOMO 235-75-15 SPORT 6L                                                 10899       16  S23575151                                                                                  
+ SUMITOMO        SUMITOMO 245-40-17 Z3                                                       10900       16  S2454017                                                                                   
+ SUMITOMO        SUMITOMO 255-40-17 Z3                                                       10901       16  S2554017                                                                                   
+ YOKOHAMA        YOKOHAMA 255-70-16 ATS                                                      12764       16  Y2557016                                                                                   
+ YOKOHAMA        YOKOHAMA 255-70-16 G012                                                     11073       16  Y25570161                                                                                  
+ YOKOHAMA        YOKOHAMA 265 70 17 GO12                                                     11074       16  Y2657017G                                                                                  
+ YOKOHAMA        YOKOHAMA 265-60-17 801                                                      11075       16  Y2656017                                                                                   
+ YOKOHAMA        YOKOHAMA 265-60-18 ATS                                                      11076       16  Y26560181                                                                                  
+ YOKOHAMA        YOKOHAMA 265-60-18 V801                                                     11077       16  Y2656018                                                                                   
+ YOKOHAMA        YOKOHAMA 265-65-17 ATS                                                      12765       16  Y2656517                                                                                   
+ YOKOHAMA        YOKOHAMA 265-65-17 GO12                                                     11078       16  Y2656517                                                                                   
+ YOKOHAMA        YOKOHAMA 265-70-15 ATS                                                      13433       16  Y2657015                                                                                   
+ YOKOHAMA        YOKOHAMA 265-70-15 G012                                                     11079       16  Y26570152                                                                                  
+ YOKOHAMA        YOKOHAMA 265-70-15 GO12                                                     12766       16  Y2657015                                                                                   
+ YOKOHAMA        YOKOHAMA 265-70-15 Y815                                                     11080       16  Y2657015                                                                                   
+ YOKOHAMA        YOKOHAMA 265-70-16 G012                                                     11081       16  Y26570161                                                                                  
+ YOKOHAMA        YOKOHAMA 265-70-16 G039                                                     11082       16  Y26570163                                                                                  
+ YOKOHAMA        YOKOHAMA 265-70-16 G051                                                     11083       16  Y26570164                                                                                  
+ YOKOHAMA        YOKOHAMA 265-70-16 G012 ATS                                                 12767       16  Y2657016ATS                                                                                
+ YOKOHAMA        YOKOHAMA 265-70-16 V801                                                     11084       16  Y26570162                                                                                  
+ YOKOHAMA        YOKOHAMA 265-70-16 YS868                                                    13434       16  Y2657016                                                                                   
+ YOKOHAMA        YOKOHAMA 265-70-17 ATS                                                      11085       16  Y2657017ATS                                                                                
+ YOKOHAMA        YOKOHAMA 265-70-17 MT                                                       11086       16  Y2657017                                                                                   
+ YOKOHAMA        YOKOHAMA 265-70-18 ATS                                                      11087       16  Y2657018                                                                                   
+ YOKOHAMA        YOKOHAMA 265-75-16 G012                                                     11088       16  Y26575162                                                                                  
+ YOKOHAMA        YOKOHAMA 265-75-16 G001 SUV                                                 13435       16  Y2657516                                                                                   
+ YOKOHAMA        YOKOHAMA 265-75-16 MT                                                       11089       16  Y2657516/                                                                                  
+ YOKOHAMA        YOKOHAMA 275 65 17 GO12                                                     11090       16  Y27565173                                                                                  
+ YOKOHAMA        YOKOHAMA 275-35-18 103                                                      11091       16  Y2753518103                                                                                
+ YOKOHAMA        YOKOHAMA 275-40-18 PA01                                                     11092       16  Y2154018                                                                                   
+ YOKOHAMA        YOKOHAMA 275-40-20 V802                                                     11093       16  Y2754020                                                                                   
+ YOKOHAMA        YOKOHAMA 275-45-19 V103                                                     11094       16  Y2754519                                                                                   
+ YOKOHAMA        YOKOHAMA 275-45-20                                                          11095       16  Y2754520                                                                                   
+ YOKOHAMA        YOKOHAMA 275-60-17 G012                                                     11096       16  Y2756017                                                                                   
+ YOKOHAMA        YOKOHAMA 275-60-17 V801                                                     11097       16  Y27560171                                                                                  
+ YOKOHAMA        YOKOHAMA 275-60-18 ATS                                                      11098       16  Y2756018                                                                                   
+ YOKOHAMA        YOKOHAMA 275-65-17 ATS                                                      12768       16  Y2756517                                                                                   
+ YOKOHAMA        YOKOHAMA 275-65-17 G051                                                     11099       16  Y2756517                                                                                   
+ YOKOHAMA        YOKOHAMA 275-70-16 ATS                                                      12769       16  Y2757016                                                                                   
+ YOKOHAMA        YOKOHAMA 275-70-16 G012                                                     11100       16  Y27570162                                                                                  
+ YOKOHAMA        YOKOHAMA 285 45 19 V802                                                     11101       16  Y2854519                                                                                   
+ YOKOHAMA        YOKOHAMA 285-50-20 PARADA                                                   11102       16  Y2855020                                                                                   
+ YOKOHAMA        YOKOHAMA 285-60-17 V801                                                     11103       16  Y2856017                                                                                   
+ YOKOHAMA        YOKOHAMA 285-60-18 ATS                                                      11104       16  Y2856018                                                                                   
+ YOKOHAMA        YOKOHAMA 285-60-18 G012                                                     12770       16  Y2856018                                                                                   
+ YOKOHAMA        YOKOHAMA 285-65-17 ATS                                                      11105       16  Y2856517ATS                                                                                
+ YOKOHAMA        YOKOHAMA 285-65-17 G94B                                                     11106       16  Y2856517                                                                                   
+ YOKOHAMA        YOKOHAMA 285-70-16 V801                                                     11107       16  Y2857016                                                                                   
+ YOKOHAMA        YOKOHAMA 285-70-17 ATS                                                      11108       16  Y2857017                                                                                   
+ YOKOHAMA        YOKOHAMA 285-75-16 ATS                                                      12771       16  Y2857516A                                                                                  
+ YOKOHAMA        YOKOHAMA 285-75-16 G001 MT                                                  11109       16  Y2857516                                                                                   
+ YOKOHAMA        YOKOHAMA 285-75-16 G012                                                     11110       16  Y28575162                                                                                  
+ YOKOHAMA        YOKOHAMA 295 45 20 V802                                                     11111       16  Y2954520                                                                                   
+ YOKOHAMA        YOKOHAMA 30 X 9.50 R15 G011                                                 11112       16  Y3095015                                                                                   
+ YOKOHAMA        YOKOHAMA 30 X 9.50 R15 G012                                                 11113       16  Y30950151                                                                                  
+ YOKOHAMA        YOKOHAMA 305-45-20 V802                                                     11114       16  Y3054520                                                                                   
+ YOKOHAMA        YOKOHAMA 305-70-16  MT                                                      11115       16  Y3057016                                                                                   
+ YOKOHAMA        YOKOHAMA 30X9.50 R 15 GO51                                                  11116       16  Y30X9.50                                                                                   
+ YOKOHAMA        YOKOHAMA 31 X 10.50 R15 G001                                                11117       16  Y31105015                                                                                  
+ YOKOHAMA        YOKOHAMA 31 X 10.50 R15 G012                                                11118       16  Y311050151                                                                                 
+ YOKOHAMA        YOKOHAMA 315-35-20 V802                                                     11119       16  Y3153520                                                                                   
+ YOKOHAMA        YOKOHAMA 315-70-17 A/TS                                                     11120       16  Y3157017                                                                                   
+ YOKOHAMA        YOKOHAMA 315-70-17 ATS                                                      12772       16  Y3157017                                                                                   
+ YOKOHAMA        YOKOHAMA 315-75-16 ATS                                                      12773       16  Y3157516 ATS                                                                               
+ YOKOHAMA        YOKOHAMA 315-75-16 G001C                                                    11121       16  Y3157516                                                                                   
+ YOKOHAMA        YOKOHAMA 315-75-16 MT                                                       11122       16  Y3157516M                                                                                  
+ YOKOHAMA        YOKOHAMA 31X10-50-15 ATS                                                    12774       16  Y31105015A                                                                                 
+ YOKOHAMA        YOKOHAMA 31X10-50-R15 AT                                                    13436       16  Y31105015                                                                                  
+ YOKOHAMA        YOKOHAMA 31X10.50 R15 MT                                                    12775       16  Y31105015                                                                                  
+ YOKOHAMA        YOKOHAMA 32X11.50 R15 G012                                                  11123       16  Y321150152                                                                                 
+ YOKOHAMA        YOKOHAMA 33 X 12.50 R15 G001                                                11124       16  Y33125015                                                                                  
+ YOKOHAMA        YOKOHAMA 33X12.50 R15 MT                                                    12776       16  Y33125015                                                                                  
+ YOKOHAMA        YOKOHAMA RUNFLA 205-45-17                                                   11125       16  Y20545171                                                                                  
+ ZETA            ZETA 165-70-13 ZTR50                                                        11126       16  KZ1657013                                                                                  
+ ZETA            ZETA 175-65-14 ZTR50                                                        11127       16  KZ1756514                                                                                  
+ ZETA            ZETA 175-70-13 ZTR50                                                        11128       16  KZ1757013                                                                                  
+ ZETA            ZETA 185-60-14 ZTR20                                                        11129       16  KZ1856014                                                                                  
+ ZETA            ZETA 185-65-14                                                              12777       16  KZ1856514                                                                                  
+ ZETA            ZETA 185-65-14 ZTR20                                                        11130       16  KZ1856514                                                                                  
+ ZETA            ZETA 185-65-15 ZTR20                                                        11131       16  KZ1856515                                                                                  
+ ZETA            ZETA 195-55-15 ZTR20                                                        11132       16  KZ1955515                                                                                  
+ ZETA            ZETA 195-60-15                                                              12778       16  KZ1956015                                                                                  
+ ZETA            ZETA 195-60-15 ZTR20                                                        11133       16  KZ1956015                                                                                  
+ ZETA            ZETA 195-65-15 ZTR20                                                        11134       16  KZ1956515                                                                                  
+ ZETA            ZETA 195-70-15 ZTR18                                                        11135       16  KZ1957015                                                                                  
+ ZETA            ZETA 205-40-17 ZTR10                                                        11136       16  KZ2054017                                                                                  
+ ZETA            ZETA 205-65-15 ZTR20                                                        11137       16  KZ2056515                                                                                  
+ ZETA            ZETA 215-45-17 ZTR10                                                        11138       16  KZ2154517                                                                                  
+ ZETA            ZETA 225-65-17                                                              11139       16  KZ2256517                                                                                  
+ ZETA            ZETA 235-60-16                                                              11140       16  KZ2356016                                                                                  
+ ZETA            ZETA 245-70-16                                                              11141       16  KZ2457016                                                                                  
+ ZETA            ZETA 265-70-16                                                              11142       16  KZ2657016                                                                                  
+ ZETA            ZETA 295-80-22.5 DR909 DIR                                                  12779       16  K29580225909                                                                               
+ ZETA            ZETA 295-80-22.5 DR920                                                      12780       16  K29580225920                                                                               
+ ZETA            ZETA 295-80-22.5 DR909 KUMHO                                                13437       16  K2958022.5                                                                                 
