@@ -20,6 +20,7 @@ namespace PDFSender.com.amdp.pdfsender
 
         public void addHeaderLine(String headerLine)
         {
+            headerLine = headerLine.Replace(Constants.HEADER_INDICATOR, "");
             headers.Add(headerLine);
         }
 

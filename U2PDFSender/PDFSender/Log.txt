@@ -1,0 +1,6 @@
+WARN 2013-06-30 12:00:04 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-06-30 12:00:04 – Reading the file: ..\PLAMAIL
+INFO 2013-06-30 12:00:05 – Destino: arleymauricio@gmail.com
+INFO 2013-06-30 12:00:05 – CC: arleymauricio@gmail.com, arleymauricio@gmail.com
+INFO 2013-06-30 12:00:05 – Adjunto: ..\Lista Productos_054439.pdf
+INFO 2013-06-30 12:00:28 – arleymauricio@gmail.comBody:No olvidar la la solicitud del cliente...
