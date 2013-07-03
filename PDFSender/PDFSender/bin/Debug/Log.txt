@@ -1,0 +1,88 @@
+WARN 2013-07-02 08:33:26 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-02 08:33:26 – Reading the file: C:\Users\Arley\Downloads\PLAMAILORIZONTAL
+INFO 2013-07-02 08:33:26 – File no found: C:\Users\Arley\Downloads\PLAMAILORIZONTAL Could not find file 'C:\Users\Arley\Downloads\PLAMAILORIZONTAL'.
+WARN 2013-07-02 08:33:49 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-02 08:33:49 – Reading the file: C:\Users\Arley\Downloads\PLAMAILORIZONTAL
+WARN 2013-07-02 08:34:32 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-02 08:34:32 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL
+INFO 2013-07-02 08:34:37 – Dirección no valida: 
+INFO 2013-07-02 08:34:37 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 08:34:37 – CC: 
+INFO 2013-07-02 08:34:37 – Adjunto: C:\Users\Arley\Downloads\_370776.pdf
+INFO 2013-07-02 08:34:46 – arleymauricio@gmail.comBody:Sin comentarios
+WARN 2013-07-02 08:37:19 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-02 08:37:19 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL
+INFO 2013-07-02 08:37:37 – Dirección no valida: 
+INFO 2013-07-02 08:37:37 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 08:37:37 – CC: 
+INFO 2013-07-02 08:37:37 – Adjunto: C:\Users\Arley\Downloads\Lista Productos_374389.pdf
+INFO 2013-07-02 08:37:52 – arleymauricio@gmail.comBody:Sin comentarios
+WARN 2013-07-02 08:38:50 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-02 08:38:50 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL
+INFO 2013-07-02 08:38:51 – Dirección no valida: 
+INFO 2013-07-02 08:38:51 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 08:38:51 – CC: 
+INFO 2013-07-02 08:38:51 – Adjunto: C:\Users\Arley\Downloads\Lista Productos_511611.pdf
+WARN 2013-07-02 08:39:32 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-02 08:39:32 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL
+INFO 2013-07-02 08:39:32 – Dirección no valida: 
+INFO 2013-07-02 08:39:32 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 08:39:32 – CC: 
+INFO 2013-07-02 08:39:32 – Adjunto: C:\Users\Arley\Downloads\Lista Productos_325805.pdf
+WARN 2013-07-02 08:48:17 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-02 08:48:17 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL
+INFO 2013-07-02 08:48:18 – Dirección no valida: 
+INFO 2013-07-02 08:48:18 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 08:48:18 – CC: 
+INFO 2013-07-02 08:48:18 – Adjunto: C:\Users\Arley\Downloads\Lista Productos_180335.pdf
+WARN 2013-07-02 08:51:23 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-02 08:51:23 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL
+INFO 2013-07-02 08:51:23 – Dirección no valida: 
+WARN 2013-07-02 08:51:36 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-02 08:51:36 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL
+INFO 2013-07-02 08:51:36 – Dirección no valida: 
+INFO 2013-07-02 08:51:36 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 08:51:36 – CC: 
+INFO 2013-07-02 08:51:36 – Adjunto: 
+WARN 2013-07-02 09:30:41 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-02 09:30:41 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL
+INFO 2013-07-02 09:30:42 – Dirección no valida: 
+INFO 2013-07-02 09:30:42 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 09:30:42 – CC: 
+INFO 2013-07-02 09:30:42 – Adjunto: 
+INFO 2013-07-02 09:30:50 – arleymauricio@gmail.comBody:Sin comentarios
+WARN 2013-07-02 09:30:50 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-02 09:30:50 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL2
+INFO 2013-07-02 09:30:50 – Dirección no valida: 
+INFO 2013-07-02 09:30:50 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 09:30:50 – CC: 
+INFO 2013-07-02 09:30:50 – Adjunto: 
+INFO 2013-07-02 09:30:54 – arleymauricio@gmail.comBody:Sin comentarios
+WARN 2013-07-02 09:36:14 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-02 09:36:14 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL
+INFO 2013-07-02 09:36:14 – Dirección no valida: 
+INFO 2013-07-02 09:36:14 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 09:36:14 – CC: 
+INFO 2013-07-02 09:36:14 – Adjunto: C:\Users\Arley\Downloads\Lista Productos_147891.pdf
+INFO 2013-07-02 09:36:21 – arleymauricio@gmail.comBody:Sin comentarios
+WARN 2013-07-02 09:36:21 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-02 09:36:21 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL - copia
+INFO 2013-07-02 09:36:21 – Dirección no valida: 
+INFO 2013-07-02 09:36:21 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 09:36:21 – CC: 
+INFO 2013-07-02 09:36:21 – Adjunto: C:\Users\Arley\Downloads\Lista Productos_218315.pdf
+INFO 2013-07-02 09:36:28 – arleymauricio@gmail.comBody:Sin comentarios
+WARN 2013-07-02 09:36:28 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-02 09:36:28 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL2
+INFO 2013-07-02 09:36:29 – Dirección no valida: 
+INFO 2013-07-02 09:36:29 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 09:36:29 – CC: 
+INFO 2013-07-02 09:36:29 – Adjunto: C:\Users\Arley\Downloads\Lista Productos_290139.pdf
+INFO 2013-07-02 09:36:36 – arleymauricio@gmail.comBody:Sin comentarios
+WARN 2013-07-02 09:36:36 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-02 09:36:36 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL2 - copia
+INFO 2013-07-02 09:36:36 – Dirección no valida: 
+INFO 2013-07-02 09:36:36 – Destino: arleymauricio@gmail.com
+INFO 2013-07-02 09:36:36 – CC: 
+INFO 2013-07-02 09:36:36 – Adjunto: C:\Users\Arley\Downloads\Lista Productos_362983.pdf
+INFO 2013-07-02 09:36:43 – arleymauricio@gmail.comBody:Sin comentarios

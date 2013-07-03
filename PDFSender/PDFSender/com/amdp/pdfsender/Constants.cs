@@ -9,7 +9,7 @@ namespace PDFSender.com.amdp.pdfsender
     public class Constants
     {
 
-        public static String FONDO = "FONDO";
+        public static String FONDO = "TEMPLATE";
         public static String DESTINO = "DESTINO";
         public static String CCMail = "CC";
         public static String REMITE = "REMITE";
@@ -17,7 +17,7 @@ namespace PDFSender.com.amdp.pdfsender
         public static String TEXTO = "TEXTO";
         public static String TAMANOLET = "TAMANO-LET";
         public static String ORIENT = "ORIENT";
-        public static String NOM_ADJ = "NOM-ADJ";
+        public static String NOM_ADJ = "NOMBRE";
 
         public static String MARG_SUP = "MARG-SUP";
         public static String MARG_INF = "MARG-INF";

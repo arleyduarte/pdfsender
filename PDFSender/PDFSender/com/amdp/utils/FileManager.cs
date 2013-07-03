@@ -25,7 +25,7 @@ namespace PDFSender.com.amdp.utils
 
         }
 
-        private void deleteSourceFile(String file)
+        public void deleteSourceFile(String file)
         {
             try
             {
@@ -36,6 +36,36 @@ namespace PDFSender.com.amdp.utils
                 log.Error("Error borrando" + file+" "+fe.Message);
             }
 
+        }
+
+        public ArrayList getFilesOfInputDirectory()
+        {
+            ArrayList filePaths = new ArrayList();
+            String inputFolder = Configuracion.Default.SOURCE_FILE;
+
+            try
+            {
+
+                    foreach (string subFile in Directory.GetFiles(inputFolder))
+                    {
+                        if (!filePaths.Contains(subFile))
+                        {
+                            filePaths.Add(subFile);
+                        }
+
+                    }
+
+                
+
+
+            }
+            catch (Exception fe)
+            {
+                log.Error(fe.Message);
+            }
+
+
+            return filePaths;
         }
     }
 }
