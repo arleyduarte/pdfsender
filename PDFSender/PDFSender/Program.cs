@@ -7,14 +7,19 @@ using PDFSender.com.amdp.pdfsender;
 using PDFSender.com.amdp.pdfsender.pdf;
 using com.amdp.notificadoremail;
 using System.Collections;
+using log4net;
 
 namespace PDFSender
 {
     class Program
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(Program));
+        private static FileManager fileManager = new FileManager();
+
+
         static void Main(string[] args)
         {
-            FileManager fileManager = new FileManager();
+            
             foreach (String fileSource in fileManager.getFilesOfInputDirectory())
             {
                 if (processReport(fileSource))
@@ -33,11 +38,21 @@ namespace PDFSender
             CustomerReportPDFAdapter pdfAdapter = new CustomerReportPDFAdapter();
             CustomerReportMailAdapter mailAdapter = new CustomerReportMailAdapter();
             NotificadorEmail notificadorEmail = new NotificadorEmail();
+            
+            log.Info(Constants.TEXT_INDICATOR);
 
             if (fileAdapter.fillCustomerReport(cr, fileSource))
             {
+
+                log.Info("El archivo PMAIL fue leido exitosamente");
+                log.Info(Constants.TEXT_INDICATOR);
+
                 if (pdfAdapter.buildPDF(cr))
                 {
+                    log.Info("El Reporte fue construido exitosamente");
+                    log.Info(Constants.TEXT_INDICATOR);
+
+                    notificadorEmail.Remite = cr.ReportInfo.Remite;
                     notificadorEmail.enviarMensaje(mailAdapter.getMailMessage(cr));
                     return true;
                 }

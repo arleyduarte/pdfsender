@@ -18,9 +18,11 @@ namespace PDFSender.com.amdp.pdfsender
         {
             MailMessage mail = new MailMessage();
             mail.Subject = customerReport.ReportInfo.Asunto;
-            mail.Body = customerReport.ReportInfo.Texto;
+            mail.Body = customerReport.Body;
             asignarDestinatarios(customerReport, mail);
             mail.Attachments.Add(new Attachment(customerReport.AttachFile));
+
+
 
             log.Info("Destino: " + customerReport.ReportInfo.Destino);
             log.Info("CC: " + customerReport.ReportInfo.CC);

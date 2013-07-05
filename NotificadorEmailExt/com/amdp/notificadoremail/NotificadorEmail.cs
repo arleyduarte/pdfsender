@@ -18,6 +18,8 @@ namespace com.amdp.notificadoremail
 
         private MailMessage msg = null;
 
+        public String Remite { get; set; }
+
 
 
         public NotificadorEmail()
@@ -32,8 +34,6 @@ namespace com.amdp.notificadoremail
             this.msg = msg;
 
             enviarMensajeRun();
-            //Thread thread = new Thread(new ThreadStart(enviarMensajeRun));
-            //thread.Start();
         }
 
 
@@ -54,7 +54,14 @@ namespace com.amdp.notificadoremail
         private void enviarMensajeRun()
         {
 
-            msg.From = new MailAddress(smtpSec.From, smtpSec.Network.UserName, System.Text.Encoding.UTF8);
+            String from = smtpSec.From;
+            String remitente = smtpSec.Network.UserName;
+            if (Remite != null)
+            {
+                from = Remite;
+                remitente = Remite;
+            }
+            msg.From = new MailAddress(from, remitente, System.Text.Encoding.UTF8);
 
             msg.Priority = MailPriority.High;
 
@@ -62,10 +69,10 @@ namespace com.amdp.notificadoremail
             msg.IsBodyHtml = true;
 
             SmtpClient client = new SmtpClient();
-            client.Credentials = new System.Net.NetworkCredential(smtpSec.From, smtpSec.Network.Password);
+            client.Credentials = new System.Net.NetworkCredential(from, smtpSec.Network.Password);
             client.Port = smtpSec.Network.Port;
             client.Host = smtpSec.Network.Host;
-            client.EnableSsl = true; //Esto es para que vaya a través de SSL que es obligatorio con GMail
+            client.EnableSsl = false; //Esto es para que vaya a través de SSL que es obligatorio con GMail
 
 
             try
@@ -73,6 +80,7 @@ namespace com.amdp.notificadoremail
 
                 client.Send(msg);
                 log.Info(msg.To.ToString() + "Body:" + msg.Body.ToString());
+               
 
             }
 

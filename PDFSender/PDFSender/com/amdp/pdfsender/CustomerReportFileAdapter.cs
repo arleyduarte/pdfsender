@@ -26,6 +26,9 @@ namespace PDFSender.com.amdp.utils
                 re = File.OpenText(filePath);
                 string line = null;
 
+
+
+
                 while ((line = re.ReadLine()) != null)
                 {
                     if (line.Length != 0)
@@ -55,10 +58,7 @@ namespace PDFSender.com.amdp.utils
                             reportInfo.Asunto = getSettingValue(line, Constants.ASUNTO);
                         }
 
-                        else if (reportInfo.Texto == null && line.Contains(Constants.TEXTO))
-                        {
-                            reportInfo.Texto = getSettingValue(line, Constants.TEXTO);
-                        }
+
 
                         else if (reportInfo.TamanoLetra == null && line.Contains(Constants.TAMANOLET))
                         {
@@ -92,6 +92,8 @@ namespace PDFSender.com.amdp.utils
                             reportInfo.NombreAdjunto = getSettingValue(line, Constants.NOM_ADJ);
                         }
 
+
+
                         else if (line.StartsWith(Constants.HEADER_INDICATOR))
                         {
                             customerReport.addHeaderLine(line);
@@ -106,7 +108,7 @@ namespace PDFSender.com.amdp.utils
                 }
 
                 customerReport.ReportInfo = reportInfo;
-
+                customerReport.fillTextBody();
                 return true;
 
             }

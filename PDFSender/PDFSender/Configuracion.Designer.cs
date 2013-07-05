@@ -25,7 +25,16 @@ namespace PDFSender {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Arley\\Downloads\\PMAIL\\PLAMAIL")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Arley\\Downloads\\")]
+        public string DESTINATION_FOLDER {
+            get {
+                return ((string)(this["DESTINATION_FOLDER"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Arley\\Downloads\\PMAIL\\")]
         public string SOURCE_FILE {
             get {
                 return ((string)(this["SOURCE_FILE"]));
@@ -34,10 +43,10 @@ namespace PDFSender {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Arley\\Downloads\\")]
-        public string DESTINATION_FOLDER {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool DELETE_REPORT_FILE {
             get {
-                return ((string)(this["DESTINATION_FOLDER"]));
+                return ((bool)(this["DELETE_REPORT_FILE"]));
             }
         }
     }

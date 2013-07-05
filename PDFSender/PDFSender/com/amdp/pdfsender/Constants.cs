@@ -14,7 +14,6 @@ namespace PDFSender.com.amdp.pdfsender
         public static String CCMail = "CC";
         public static String REMITE = "REMITE";
         public static String ASUNTO = "ASUNTO";
-        public static String TEXTO = "TEXTO";
         public static String TAMANOLET = "TAMANO-LET";
         public static String ORIENT = "ORIENT";
         public static String NOM_ADJ = "NOMBRE";
@@ -24,6 +23,7 @@ namespace PDFSender.com.amdp.pdfsender
         public static String MARG_IZQ = "MARG-IZQ";
 
         public static String HEADER_INDICATOR = ".";
+        public static String TEXT_INDICATOR = "---------------------------------------------------";
 
         public static Font font = new Font(iTextSharp.text.Font.FontFamily.COURIER, 7);
         public static int DEFAULT_FONT_SIZE = 7;
