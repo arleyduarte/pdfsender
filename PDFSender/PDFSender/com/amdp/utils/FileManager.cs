@@ -25,6 +25,54 @@ namespace PDFSender.com.amdp.utils
 
         }
 
+
+        public void deleteFiles(String path, String extensions)
+        {
+
+
+            foreach (String file in getFilesOfInputDirectory(path, extensions))
+            {
+                deleteSourceFile(file);
+            }
+
+
+        }
+
+
+
+
+        public ArrayList getFilesOfInputDirectory(String inptuFolder, String extension)
+        {
+            ArrayList filePaths = new ArrayList();
+            List<string> _extensions = new List<string> { extension};
+
+            try
+            {
+                foreach (String ext in _extensions)
+                {
+                    foreach (string subFile in Directory.GetFiles(inptuFolder, ext))
+                    {
+                        if (!filePaths.Contains(subFile))
+                        {
+                            filePaths.Add(subFile);
+                        }
+
+                    }
+
+                }
+
+
+            }
+            catch (Exception fe)
+            {
+                log.Error(fe.Message);
+            }
+
+
+            return filePaths;
+        }
+
+
         public void deleteSourceFile(String file)
         {
             try

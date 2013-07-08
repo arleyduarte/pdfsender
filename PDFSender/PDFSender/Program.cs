@@ -19,6 +19,7 @@ namespace PDFSender
 
         static void Main(string[] args)
         {
+            cleanDirectory();
             
             foreach (String fileSource in fileManager.getFilesOfInputDirectory())
             {
@@ -29,6 +30,11 @@ namespace PDFSender
             }
 
             Environment.Exit(0);
+        }
+
+        static void cleanDirectory()
+        {
+            fileManager.deleteFiles(Configuracion.Default.DESTINATION_FOLDER, "*.pdf");
         }
 
         static bool processReport(String fileSource)

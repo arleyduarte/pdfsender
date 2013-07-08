@@ -58,8 +58,16 @@ namespace com.amdp.notificadoremail
             String remitente = smtpSec.Network.UserName;
             if (Remite != null)
             {
-                from = Remite;
-                remitente = Remite;
+                if (validarEmail(Remite))
+                {
+                    from = Remite;
+                    remitente = Remite;
+                }
+                else
+                {
+                    log.Error("El correo del remitente no es valido: "+Remite);
+                }
+
             }
             msg.From = new MailAddress(from, remitente, System.Text.Encoding.UTF8);
 

@@ -101,7 +101,7 @@ namespace PDFSender.com.amdp.utils
 
                         else
                         {
-                            customerReport.addDetailLine(line.Trim());
+                            customerReport.addDetailLine(line);
                         }
 
                     }

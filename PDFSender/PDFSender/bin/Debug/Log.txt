@@ -9,3 +9,124 @@ INFO 2013-07-04 11:17:01 – Destino: email-erp@u2.com.co
 INFO 2013-07-04 11:17:01 – CC: andresurdaneta@u2.com.co
 INFO 2013-07-04 11:17:01 – Adjunto: C:\Users\Arley\Downloads\Lista de terceros_013029.pdf
 INFO 2013-07-04 11:17:10 – email-erp@u2.com.coBody:<br />Favor revisar el documento.<br /><br /><br />Gracias.<br /><br /><br />Atentamente;<br />Pedro Martinez<br />Tullanta.com
+WARN 2013-07-07 08:15:53 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-07 08:15:53 – ---------------------------------------------------
+INFO 2013-07-07 08:15:53 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331
+INFO 2013-07-07 08:15:53 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-07 08:15:53 – ---------------------------------------------------
+INFO 2013-07-07 08:15:54 – El Reporte fue construido exitosamente
+INFO 2013-07-07 08:15:54 – ---------------------------------------------------
+INFO 2013-07-07 08:15:54 – Dirección no valida: 
+INFO 2013-07-07 08:15:54 – Destino: andresurdaneta@u2.com.co
+INFO 2013-07-07 08:15:54 – CC: 
+INFO 2013-07-07 08:15:54 – Adjunto: C:\Users\Arley\Downloads\REPORTE_545409.pdf
+WARN 2013-07-07 08:18:40 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-07 08:18:40 – ---------------------------------------------------
+INFO 2013-07-07 08:18:40 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331
+INFO 2013-07-07 08:18:40 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-07 08:18:40 – ---------------------------------------------------
+INFO 2013-07-07 08:18:40 – El Reporte fue construido exitosamente
+INFO 2013-07-07 08:18:40 – ---------------------------------------------------
+INFO 2013-07-07 08:18:40 – Dirección no valida: 
+INFO 2013-07-07 08:18:40 – Destino: andresurdaneta@u2.com.co
+INFO 2013-07-07 08:18:40 – CC: 
+INFO 2013-07-07 08:18:40 – Adjunto: C:\Users\Arley\Downloads\REPORTE_407954.pdf
+INFO 2013-07-07 08:18:46 – andresurdaneta@u2.com.coBody:<br />Favor revisar la informacion<br />Gracias.<br />Atentamente.<br />Andres Urdaneta<br />
+WARN 2013-07-07 08:20:49 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-07 08:20:49 – ---------------------------------------------------
+INFO 2013-07-07 08:20:49 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331
+INFO 2013-07-07 08:20:49 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-07 08:20:49 – ---------------------------------------------------
+INFO 2013-07-07 08:20:50 – El Reporte fue construido exitosamente
+INFO 2013-07-07 08:20:50 – ---------------------------------------------------
+INFO 2013-07-07 08:20:50 – Dirección no valida: 
+INFO 2013-07-07 08:20:50 – Destino: andresurdaneta@u2.com.co
+INFO 2013-07-07 08:20:50 – CC: 
+INFO 2013-07-07 08:20:50 – Adjunto: C:\Users\Arley\Downloads\REPORTE_501708.pdf
+ERROR2013-07-07 08:20:50 – El correo del remitente no es valido: tullanta.com.co
+INFO 2013-07-07 08:20:58 – andresurdaneta@u2.com.coBody:<br />Favor revisar la informacion<br />Gracias.<br />Atentamente.<br />Andres Urdaneta<br />
+WARN 2013-07-07 08:21:51 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-07 08:21:51 – ---------------------------------------------------
+INFO 2013-07-07 08:21:51 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331
+INFO 2013-07-07 08:21:51 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-07 08:21:51 – ---------------------------------------------------
+INFO 2013-07-07 08:21:51 – El Reporte fue construido exitosamente
+INFO 2013-07-07 08:21:51 – ---------------------------------------------------
+INFO 2013-07-07 08:21:51 – Dirección no valida: 
+INFO 2013-07-07 08:21:51 – Destino: andresurdaneta@u2.com.co
+INFO 2013-07-07 08:21:51 – CC: 
+INFO 2013-07-07 08:21:51 – Adjunto: C:\Users\Arley\Downloads\PMAIL\REPORTE_513943.pdf
+ERROR2013-07-07 08:21:51 – El correo del remitente no es valido: tullanta.com.co
+INFO 2013-07-07 08:21:55 – andresurdaneta@u2.com.coBody:<br />Favor revisar la informacion<br />Gracias.<br />Atentamente.<br />Andres Urdaneta<br />
+WARN 2013-07-07 08:23:30 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-07 08:23:30 – ---------------------------------------------------
+INFO 2013-07-07 08:23:30 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331
+INFO 2013-07-07 08:23:36 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-07 08:23:36 – ---------------------------------------------------
+INFO 2013-07-07 08:23:37 – El Reporte fue construido exitosamente
+INFO 2013-07-07 08:23:37 – ---------------------------------------------------
+INFO 2013-07-07 08:23:37 – Dirección no valida: 
+INFO 2013-07-07 08:23:37 – Destino: andresurdaneta@u2.com.co
+INFO 2013-07-07 08:23:37 – CC: 
+INFO 2013-07-07 08:23:37 – Adjunto: C:\Users\Arley\Downloads\PMAIL\REPORTE_372814.pdf
+ERROR2013-07-07 08:23:37 – El correo del remitente no es valido: tullanta.com.co
+INFO 2013-07-07 08:23:41 – andresurdaneta@u2.com.coBody:
+WARN 2013-07-07 08:23:41 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-07 08:23:41 – ---------------------------------------------------
+INFO 2013-07-07 08:23:41 – Reading the file: C:\Users\Arley\Downloads\PMAIL\REPORTE_513943.pdf
+INFO 2013-07-07 08:23:41 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-07 08:23:41 – ---------------------------------------------------
+WARN 2013-07-07 08:24:51 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-07 08:24:51 – ---------------------------------------------------
+INFO 2013-07-07 08:24:51 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331
+INFO 2013-07-07 08:24:51 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-07 08:24:51 – ---------------------------------------------------
+INFO 2013-07-07 08:24:51 – El Reporte fue construido exitosamente
+INFO 2013-07-07 08:24:51 – ---------------------------------------------------
+INFO 2013-07-07 08:24:51 – Dirección no valida: 
+INFO 2013-07-07 08:24:51 – Destino: andresurdaneta@u2.com.co
+INFO 2013-07-07 08:24:51 – CC: 
+INFO 2013-07-07 08:24:51 – Adjunto: C:\Users\Arley\Downloads\PMAIL\REPORTE_515516.pdf
+ERROR2013-07-07 08:24:51 – El correo del remitente no es valido: tullanta.com.co
+INFO 2013-07-07 08:24:55 – andresurdaneta@u2.com.coBody:
+WARN 2013-07-07 08:39:27 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-07 08:39:28 – ---------------------------------------------------
+INFO 2013-07-07 08:39:28 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331
+WARN 2013-07-07 08:43:25 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-07 08:43:25 – ---------------------------------------------------
+INFO 2013-07-07 08:43:25 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331
+INFO 2013-07-07 08:43:29 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-07 08:43:29 – ---------------------------------------------------
+INFO 2013-07-07 08:43:30 – El Reporte fue construido exitosamente
+INFO 2013-07-07 08:43:30 – ---------------------------------------------------
+INFO 2013-07-07 08:43:30 – Dirección no valida: 
+INFO 2013-07-07 08:43:30 – Destino: andresurdaneta@u2.com.co
+INFO 2013-07-07 08:43:30 – CC: 
+INFO 2013-07-07 08:43:30 – Adjunto: C:\Users\Arley\Downloads\PMAIL\REPORTE_302446.pdf
+ERROR2013-07-07 08:43:30 – El correo del remitente no es valido: tullanta.com.co
+INFO 2013-07-07 08:43:37 – andresurdaneta@u2.com.coBody:<br />Favor revisar la informacion<br />Gracias.<br />Atentamente.<br />Andres Urdaneta<br />                                                                                                                                                                                                                           
+WARN 2013-07-07 08:43:37 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-07 08:43:37 – ---------------------------------------------------
+INFO 2013-07-07 08:43:37 – Reading the file: C:\Users\Arley\Downloads\PMAIL\REPORTE_515516.pdf
+INFO 2013-07-07 08:43:42 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-07 08:43:42 – ---------------------------------------------------
+ERROR2013-07-07 08:43:42 – No se econtro el archivo de FONDO: System.NullReferenceException: Object reference not set to an instance of an object.
+   at iTextSharp.text.pdf.RandomAccessFileOrArray..ctor(String filename, Boolean forceRead)
+   at iTextSharp.text.pdf.RandomAccessFileOrArray..ctor(String filename)
+   at iTextSharp.text.pdf.PRTokeniser..ctor(String filename)
+   at iTextSharp.text.pdf.PdfReader..ctor(String filename, Byte[] ownerPassword)
+   at iTextSharp.text.pdf.PdfReader..ctor(String filename)
+   at PDFSender.com.amdp.pdfsender.pdf.CustomerReportPDFAdapter.loadTemplate() in D:\workspaceNet\TuLLanta\PDFSender\PDFSender\com\amdp\pdfsender\CustomerReportPDFAdapter.cs:line 69
+ERROR2013-07-07 08:55:17 – Error borrandoC:\Users\Arley\Downloads\PMAIL\REPORTE_302446.pdf The process cannot access the file 'C:\Users\Arley\Downloads\PMAIL\REPORTE_302446.pdf' because it is being used by another process.
+WARN 2013-07-07 08:55:33 – Correo de Envio email-erp@u2.com.co
+INFO 2013-07-07 08:55:33 – ---------------------------------------------------
+INFO 2013-07-07 08:55:33 – Reading the file: C:\Users\Arley\Downloads\PMAIL\REPORTE_302446.pdf
+INFO 2013-07-07 08:55:33 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-07 08:55:33 – ---------------------------------------------------
+ERROR2013-07-07 08:55:33 – No se econtro el archivo de FONDO: System.NullReferenceException: Object reference not set to an instance of an object.
+   at iTextSharp.text.pdf.RandomAccessFileOrArray..ctor(String filename, Boolean forceRead)
+   at iTextSharp.text.pdf.RandomAccessFileOrArray..ctor(String filename)
+   at iTextSharp.text.pdf.PRTokeniser..ctor(String filename)
+   at iTextSharp.text.pdf.PdfReader..ctor(String filename, Byte[] ownerPassword)
+   at iTextSharp.text.pdf.PdfReader..ctor(String filename)
+   at PDFSender.com.amdp.pdfsender.pdf.CustomerReportPDFAdapter.loadTemplate() in D:\workspaceNet\TuLLanta\PDFSender\PDFSender\com\amdp\pdfsender\CustomerReportPDFAdapter.cs:line 69

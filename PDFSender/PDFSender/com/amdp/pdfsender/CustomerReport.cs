@@ -19,7 +19,11 @@ namespace PDFSender.com.amdp.pdfsender
 
         public void addDetailLine(String detail)
         {
-            details.Add(detail.Trim());
+            if (detail.StartsWith(Constants.TEXT_INDICATOR))
+            {
+                detail = detail.Trim();
+            }
+            details.Add(detail);
         }
 
         public void addHeaderLine(String headerLine)

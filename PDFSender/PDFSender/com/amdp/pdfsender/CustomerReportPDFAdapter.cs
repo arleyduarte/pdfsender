@@ -73,7 +73,7 @@ namespace PDFSender.com.amdp.pdfsender.pdf
 
                 return true;
             }
-            catch (IOException ioe)
+            catch (Exception ioe)
             {
                 log.Error("No se econtro el archivo de FONDO:" +customerReport.ReportInfo.Fondo+" "+ioe);
                 return false;
