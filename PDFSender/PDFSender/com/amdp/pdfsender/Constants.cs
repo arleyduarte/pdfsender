@@ -17,6 +17,8 @@ namespace PDFSender.com.amdp.pdfsender
         public static String TAMANOLET = "TAMANO-LET";
         public static String ORIENT = "ORIENT";
         public static String NOM_ADJ = "NOMBRE";
+        public static String FORMATO = "FORMATO";
+        public static String PDF_FORMATO = "PDF";
 
         public static String MARG_SUP = "MARG-SUP";
         public static String MARG_INF = "MARG-INF";
@@ -30,5 +32,8 @@ namespace PDFSender.com.amdp.pdfsender
         public static int DEFAULT_TOP_MARGIN = 72;
         public static int DEFAULT_BUTTOM_MARGIN = 100;
         public static int DEFAULT_LEFT_MARGIN = 36;
+
+
+        public static String DEFAULT_TEMPLATE = "default_template.pdf";
     }
 }

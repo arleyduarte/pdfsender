@@ -12,6 +12,7 @@ namespace PDFSender.com.amdp.pdfsender
         private static readonly ILog log = LogManager.GetLogger(typeof(CustomerReport));
         public ReportInfo ReportInfo { get; set; }
         public String AttachFile { get; set; }
+        public String SourceFile { get; set; }
         public String Body { get; set; }
         private ArrayList headers = new ArrayList();
         private ArrayList details = new ArrayList();

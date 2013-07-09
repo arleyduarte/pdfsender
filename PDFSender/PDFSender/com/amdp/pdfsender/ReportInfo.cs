@@ -9,6 +9,7 @@ namespace PDFSender.com.amdp.pdfsender
     {
 
         public String Fondo { get; set; }
+        public String Formato { get; set; }
         public String Destino { get; set; }
         public String CC { get; set; }
         public String Remite { get; set; }

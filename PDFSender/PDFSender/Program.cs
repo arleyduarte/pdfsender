@@ -53,15 +53,27 @@ namespace PDFSender
                 log.Info("El archivo PMAIL fue leido exitosamente");
                 log.Info(Constants.TEXT_INDICATOR);
 
-                if (pdfAdapter.buildPDF(cr))
-                {
-                    log.Info("El Reporte fue construido exitosamente");
-                    log.Info(Constants.TEXT_INDICATOR);
 
-                    notificadorEmail.Remite = cr.ReportInfo.Remite;
-                    notificadorEmail.enviarMensaje(mailAdapter.getMailMessage(cr));
-                    return true;
+
+                if (cr.ReportInfo.Formato == Constants.PDF_FORMATO)
+                {
+                    if (pdfAdapter.buildPDF(cr))
+                    {
+                        log.Info("El Reporte fue construido exitosamente");
+                        log.Info(Constants.TEXT_INDICATOR);
+                       
+                    }
                 }
+
+
+                if (NotificadorEmail.validarEmail(cr.ReportInfo.Remite))
+                {
+                    notificadorEmail.Remite = cr.ReportInfo.Remite;
+                }
+   
+                notificadorEmail.enviarMensaje(mailAdapter.getMailMessage(cr));
+                return true;
+
             }
 
             return false;

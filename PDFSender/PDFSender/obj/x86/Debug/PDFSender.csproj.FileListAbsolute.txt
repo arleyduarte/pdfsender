@@ -11,3 +11,4 @@ D:\workspaceNet\TuLLanta\PDFSender\PDFSender\bin\Debug\log4net.xml
 D:\workspaceNet\TuLLanta\PDFSender\PDFSender\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\workspaceNet\TuLLanta\PDFSender\PDFSender\obj\x86\Debug\PDFSender.exe
 D:\workspaceNet\TuLLanta\PDFSender\PDFSender\obj\x86\Debug\PDFSender.pdb
+D:\workspaceNet\TuLLanta\PDFSender\PDFSender\bin\Debug\default_template.pdf

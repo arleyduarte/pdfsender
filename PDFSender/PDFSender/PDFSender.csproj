@@ -90,6 +90,9 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Configuracion.Designer.cs</LastGenOutput>
     </None>
+    <None Include="default_template.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Log4Net.config" />
   </ItemGroup>
   <ItemGroup>

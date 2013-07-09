@@ -66,6 +66,7 @@ namespace PDFSender.com.amdp.pdfsender.pdf
         {
             try
             {
+
                 reader = new PdfReader(customerReport.ReportInfo.Fondo);
                 Rectangle pageSize = reader.GetPageSize(1);
                 pageHeight = (int)pageSize.Height;

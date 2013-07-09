@@ -20,7 +20,16 @@ namespace PDFSender.com.amdp.pdfsender
             mail.Subject = customerReport.ReportInfo.Asunto;
             mail.Body = customerReport.Body;
             asignarDestinatarios(customerReport, mail);
-            mail.Attachments.Add(new Attachment(customerReport.AttachFile));
+
+            if (customerReport.ReportInfo.Formato == Constants.PDF_FORMATO)
+            {
+                mail.Attachments.Add(new Attachment(customerReport.AttachFile));
+            }
+            else
+            {
+                mail.Attachments.Add(new Attachment(customerReport.SourceFile));
+            }
+
 
 
 

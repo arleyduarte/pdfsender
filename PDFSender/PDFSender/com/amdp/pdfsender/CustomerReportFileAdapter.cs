@@ -24,6 +24,7 @@ namespace PDFSender.com.amdp.utils
             try
             {
                 re = File.OpenText(filePath);
+                customerReport.SourceFile = filePath;
                 string line = null;
 
 
@@ -36,6 +37,17 @@ namespace PDFSender.com.amdp.utils
                         if (line.Contains(Constants.FONDO) && reportInfo.Fondo == null)
                         {
                             reportInfo.Fondo = getSettingValue(line, Constants.FONDO);
+
+                            if (!File.Exists(reportInfo.Fondo))
+                            {
+                                reportInfo.Fondo = Directory.GetCurrentDirectory() + "\\" + Constants.DEFAULT_TEMPLATE;
+                            }
+
+                        }
+
+                        else if (line.Contains(Constants.FORMATO) && reportInfo.Formato == null)
+                        {
+                            reportInfo.Formato = getSettingValue(line, Constants.FORMATO);
                         }
 
                         else if (line.Contains(Constants.DESTINO) && reportInfo.Destino == null)
