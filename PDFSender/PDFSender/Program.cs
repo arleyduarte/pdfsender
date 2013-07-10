@@ -19,8 +19,8 @@ namespace PDFSender
 
         static void Main(string[] args)
         {
+            log.Info(Constants.TEXT_INDICATOR);
             cleanDirectory();
-            
             foreach (String fileSource in fileManager.getFilesOfInputDirectory())
             {
                 if (processReport(fileSource))
@@ -29,6 +29,7 @@ namespace PDFSender
                 }
             }
 
+            log.Info(Constants.TEXT_INDICATOR);
             Environment.Exit(0);
         }
 
@@ -44,28 +45,18 @@ namespace PDFSender
             CustomerReportPDFAdapter pdfAdapter = new CustomerReportPDFAdapter();
             CustomerReportMailAdapter mailAdapter = new CustomerReportMailAdapter();
             NotificadorEmail notificadorEmail = new NotificadorEmail();
-            
-            log.Info(Constants.TEXT_INDICATOR);
-
+ 
             if (fileAdapter.fillCustomerReport(cr, fileSource))
             {
-
                 log.Info("El archivo PMAIL fue leido exitosamente");
-                log.Info(Constants.TEXT_INDICATOR);
-
-
-
                 if (cr.ReportInfo.Formato == Constants.PDF_FORMATO)
                 {
                     if (pdfAdapter.buildPDF(cr))
                     {
                         log.Info("El Reporte fue construido exitosamente");
-                        log.Info(Constants.TEXT_INDICATOR);
-                       
                     }
                 }
-
-
+                
                 if (NotificadorEmail.validarEmail(cr.ReportInfo.Remite))
                 {
                     notificadorEmail.Remite = cr.ReportInfo.Remite;
@@ -79,7 +70,5 @@ namespace PDFSender
             return false;
 
         }
-
-
     }
 }
