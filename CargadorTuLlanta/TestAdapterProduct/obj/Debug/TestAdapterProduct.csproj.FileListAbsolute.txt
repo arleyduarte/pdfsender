@@ -7,3 +7,11 @@ D:\workspaceNet\CargadorTuLlanta\TestAdapterProduct\bin\Debug\log4net.xml
 D:\workspaceNet\CargadorTuLlanta\TestAdapterProduct\obj\Debug\ResolveAssemblyReference.cache
 D:\workspaceNet\CargadorTuLlanta\TestAdapterProduct\obj\Debug\TestAdapterProduct.dll
 D:\workspaceNet\CargadorTuLlanta\TestAdapterProduct\obj\Debug\TestAdapterProduct.pdb
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\TestAdapterProduct\bin\Debug\TestAdapterProduct.dll
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\TestAdapterProduct\bin\Debug\TestAdapterProduct.pdb
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\TestAdapterProduct\bin\Debug\CargadorTuLlanta.exe
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\TestAdapterProduct\bin\Debug\CargadorTuLlanta.pdb
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\TestAdapterProduct\bin\Debug\log4net.xml
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\TestAdapterProduct\obj\Debug\ResolveAssemblyReference.cache
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\TestAdapterProduct\obj\Debug\TestAdapterProduct.dll
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\TestAdapterProduct\obj\Debug\TestAdapterProduct.pdb

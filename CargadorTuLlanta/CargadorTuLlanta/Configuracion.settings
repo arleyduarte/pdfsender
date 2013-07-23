@@ -11,5 +11,20 @@
     <Setting Name="Plano_Precios" Type="System.String" Scope="Application">
       <Value Profile="(Default)">C:\Users\Arley\Desktop\PLAPRE</Value>
     </Setting>
+    <Setting Name="SERVER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">190.85.10.234</Value>
+    </Setting>
+    <Setting Name="PORT" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+    <Setting Name="USERNAME" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="PASSWORD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mocion123</Value>
+    </Setting>
+    <Setting Name="DATABASE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">tullanta</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

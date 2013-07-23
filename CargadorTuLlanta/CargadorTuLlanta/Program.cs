@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using CargadorTuLlanta.com.amdp.tullanta;
+using CargadorTuLlanta.com.amdp.utils;
 
 namespace CargadorTuLlanta
 {
@@ -10,8 +11,12 @@ namespace CargadorTuLlanta
     {
         static void Main(string[] args)
         {
-            TuLLantaAdapter tuLLantaAdapter = new TuLLantaAdapter();
-            tuLLantaAdapter.updateData();
+
+            MySQLConnector connector = new MySQLConnector();
+            connector.connect();
+            
+            //TuLLantaAdapter tuLLantaAdapter = new TuLLantaAdapter();
+            //tuLLantaAdapter.updateData();
         }
     }
 }

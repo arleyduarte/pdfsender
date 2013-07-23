@@ -72,6 +72,7 @@
     <Compile Include="com\amdp\pdfsender\CustomerReport.cs" />
     <Compile Include="com\amdp\pdfsender\CustomerReportMailAdapter.cs" />
     <Compile Include="com\amdp\pdfsender\CustomerReportPDFAdapter.cs" />
+    <Compile Include="com\amdp\pdfsender\CustomerReportTextAdapter.cs" />
     <Compile Include="com\amdp\pdfsender\ReportInfo.cs" />
     <Compile Include="com\amdp\pdfsender\CustomerReportFileAdapter.cs" />
     <Compile Include="com\amdp\utils\FileManager.cs" />

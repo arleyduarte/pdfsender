@@ -9,3 +9,7 @@ D:\workspaceNet\CargadorTuLlanta\CargadorTuLlanta\obj\x86\Debug\CargadorTuLlanta
 D:\workspaceNet\TuLLanta\CargadorTuLlanta\CargadorTuLlanta\bin\Debug\CargadorTuLlanta.exe.config
 D:\workspaceNet\TuLLanta\CargadorTuLlanta\CargadorTuLlanta\obj\x86\Debug\CargadorTuLlanta.exe
 D:\workspaceNet\TuLLanta\CargadorTuLlanta\CargadorTuLlanta\obj\x86\Debug\CargadorTuLlanta.pdb
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\CargadorTuLlanta\bin\Debug\CargadorTuLlanta.exe
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\CargadorTuLlanta\bin\Debug\CargadorTuLlanta.pdb
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\CargadorTuLlanta\bin\Debug\log4net.xml
+D:\workspaceNet\TuLLanta\CargadorTuLlanta\CargadorTuLlanta\obj\x86\Debug\ResolveAssemblyReference.cache

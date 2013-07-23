@@ -1,0 +1,24 @@
+INFO 2013-07-16 07:34:35 – ---------------------------------------------------
+WARN 2013-07-16 07:34:35 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-16 07:34:35 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331
+INFO 2013-07-16 07:34:35 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-16 07:34:56 – El Reporte fue construido exitosamente
+INFO 2013-07-16 07:43:58 – ---------------------------------------------------
+WARN 2013-07-16 07:43:58 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-16 07:43:58 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331
+INFO 2013-07-16 07:43:58 – El archivo PMAIL fue leido exitosamente
+INFO 2013-07-16 07:44:53 – El Reporte fue construido exitosamente
+INFO 2013-07-16 07:44:53 – Dirección no valida: 
+INFO 2013-07-16 07:44:53 – Destino: arleymauricio@gmail.com
+INFO 2013-07-16 07:44:53 – CC: 
+INFO 2013-07-16 07:44:53 – Adjunto: C:\Users\Arley\Downloads\PMAIL\REPORTE_029348.txt
+ERROR2013-07-16 07:44:55 – Error al enviar System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Must issue a STARTTLS command first. aj3sm6726147pad.8 - gsmtp
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, String from)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at com.amdp.notificadoremail.NotificadorEmail.enviarMensajeRun() in D:\workspaceNet\TuLLanta\NotificadorEmailExt\com\amdp\notificadoremail\NotificadorEmail.cs:line 89
+ERROR2013-07-16 07:44:55 – Error borrandoC:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331 The process cannot access the file 'C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130705-150331' because it is being used by another process.
+WARN 2013-07-16 07:44:55 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-07-16 07:44:55 – Reading the file: C:\Users\Arley\Downloads\PMAIL\REPORTE_450819.txt
+INFO 2013-07-16 07:44:55 – El archivo PMAIL fue leido exitosamente

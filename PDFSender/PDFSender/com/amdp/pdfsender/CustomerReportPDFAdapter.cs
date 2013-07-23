@@ -26,7 +26,7 @@ namespace PDFSender.com.amdp.pdfsender.pdf
         private ArrayList tempFiles = new ArrayList();
         private ArrayList details = new ArrayList();
 
-        public bool buildPDF(CustomerReport customerReport)
+        public bool buildReport(CustomerReport customerReport)
         {
             this.customerReport = customerReport;
 

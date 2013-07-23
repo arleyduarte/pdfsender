@@ -51,7 +51,16 @@ namespace PDFSender
                 log.Info("El archivo PMAIL fue leido exitosamente");
                 if (cr.ReportInfo.Formato == Constants.PDF_FORMATO)
                 {
-                    if (pdfAdapter.buildPDF(cr))
+                    if (pdfAdapter.buildReport(cr))
+                    {
+                        log.Info("El Reporte fue construido exitosamente");
+                    }
+                }
+                else 
+                {
+                    CustomerReportTextAdapter textAdapter = new CustomerReportTextAdapter();
+
+                    if (textAdapter.buildReport(cr))
                     {
                         log.Info("El Reporte fue construido exitosamente");
                     }
