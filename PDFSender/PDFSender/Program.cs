@@ -9,6 +9,8 @@ using com.amdp.notificadoremail;
 using System.Collections;
 using log4net;
 
+
+
 namespace PDFSender
 {
     class Program
@@ -18,6 +20,11 @@ namespace PDFSender
 
 
         static void Main(string[] args)
+        {
+            runPDFSender();
+        }
+
+        static void runPDFSender()
         {
             log.Info(Constants.TEXT_INDICATOR);
             cleanDirectory();
@@ -38,6 +45,8 @@ namespace PDFSender
             fileManager.deleteFiles(Configuracion.Default.DESTINATION_FOLDER, "*.pdf");
         }
 
+
+
         static bool processReport(String fileSource)
         {
             CustomerReport cr = new CustomerReport();
@@ -53,7 +62,16 @@ namespace PDFSender
                 {
                     if (pdfAdapter.buildReport(cr))
                     {
-                        log.Info("El Reporte fue construido exitosamente");
+                        log.Info("El Reporte PDF fue construido exitosamente");
+                    }
+                }
+                else if (cr.ReportInfo.Formato == Constants.EXCEL_FORMATO)
+                {
+                    CustomerReportExcelAdapter excelAdapter = new CustomerReportExcelAdapter();
+
+                    if (excelAdapter.buildReport(cr))
+                    {
+                        log.Info("El Reporte Excel fue construido exitosamente");
                     }
                 }
                 else 
@@ -62,7 +80,7 @@ namespace PDFSender
 
                     if (textAdapter.buildReport(cr))
                     {
-                        log.Info("El Reporte fue construido exitosamente");
+                        log.Info("El Reporte texto fue construido exitosamente");
                     }
                 }
                 

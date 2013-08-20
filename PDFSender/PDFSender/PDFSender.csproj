@@ -50,6 +50,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ExcelPackage">
+      <HintPath>C:\Users\Arley\Desktop\ExcelPackageBinary\ExcelPackage.dll</HintPath>
+    </Reference>
     <Reference Include="itextsharp">
       <HintPath>..\..\..\PetroOperaciones\PetroOperaciones\bin\itextsharp.dll</HintPath>
     </Reference>
@@ -71,8 +74,9 @@
     <Compile Include="com\amdp\pdfsender\Constants.cs" />
     <Compile Include="com\amdp\pdfsender\CustomerReport.cs" />
     <Compile Include="com\amdp\pdfsender\CustomerReportMailAdapter.cs" />
-    <Compile Include="com\amdp\pdfsender\CustomerReportPDFAdapter.cs" />
-    <Compile Include="com\amdp\pdfsender\CustomerReportTextAdapter.cs" />
+    <Compile Include="com\amdp\pdfsender\export\CustomerReportExcelAdapter.cs" />
+    <Compile Include="com\amdp\pdfsender\export\CustomerReportPDFAdapter.cs" />
+    <Compile Include="com\amdp\pdfsender\export\CustomerReportTextAdapter.cs" />
     <Compile Include="com\amdp\pdfsender\ReportInfo.cs" />
     <Compile Include="com\amdp\pdfsender\CustomerReportFileAdapter.cs" />
     <Compile Include="com\amdp\utils\FileManager.cs" />

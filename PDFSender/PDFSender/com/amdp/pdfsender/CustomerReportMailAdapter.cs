@@ -6,6 +6,8 @@ using System.Net.Mail;
 using System.Collections;
 using com.amdp.notificadoremail;
 using log4net;
+using System.Net.Mime;
+using System.IO;
 
 namespace PDFSender.com.amdp.pdfsender
 {
@@ -18,18 +20,41 @@ namespace PDFSender.com.amdp.pdfsender
         {
             MailMessage mail = new MailMessage();
             mail.Subject = customerReport.ReportInfo.Asunto;
-            mail.Body = customerReport.Body;
-            asignarDestinatarios(customerReport, mail);
 
-            if (customerReport.ReportInfo.Formato == Constants.PDF_FORMATO)
+       
+            String imagenAdjunta = customerReport.ReportInfo.ImagenAdjunta;
+
+            if (imagenAdjunta != null && imagenAdjunta.Length > 0 && File.Exists(imagenAdjunta))
             {
-                mail.Attachments.Add(new Attachment(customerReport.AttachFile));
+                string html = customerReport.Body +
+                  "<br/><img src='cid:imagen' />";
+
+                AlternateView htmlView =
+                    AlternateView.CreateAlternateViewFromString(html,
+                                            Encoding.UTF8,
+                                            MediaTypeNames.Text.Html);
+                LinkedResource img = new LinkedResource(imagenAdjunta, MediaTypeNames.Image.Jpeg);
+                img.ContentId = "imagen";
+                htmlView.LinkedResources.Add(img);
+                mail.AlternateViews.Add(htmlView);
             }
             else
             {
-                mail.Attachments.Add(new Attachment(customerReport.SourceFile));
+                mail.Body = customerReport.Body;
             }
 
+
+
+            // Lo incrustamos en la vista HTML...
+
+            asignarDestinatarios(customerReport, mail);
+
+
+            if (File.Exists(customerReport.AttachFile))
+            {
+
+                mail.Attachments.Add(new Attachment(customerReport.AttachFile));
+            }
 
 
 

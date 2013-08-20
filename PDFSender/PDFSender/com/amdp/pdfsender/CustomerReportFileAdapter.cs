@@ -50,6 +50,11 @@ namespace PDFSender.com.amdp.utils
                             reportInfo.Formato = getSettingValue(line, Constants.FORMATO);
                         }
 
+                        else if (line.Contains(Constants.IMAGEN_ADJUNTA) && reportInfo.ImagenAdjunta == null)
+                        {
+                            reportInfo.ImagenAdjunta = getSettingValue(line, Constants.IMAGEN_ADJUNTA);
+                        }
+
                         else if (line.Contains(Constants.DESTINO) && reportInfo.Destino == null)
                         {
                             reportInfo.Destino = getSettingValue(line, Constants.DESTINO);
