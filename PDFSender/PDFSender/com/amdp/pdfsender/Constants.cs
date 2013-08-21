@@ -18,7 +18,7 @@ namespace PDFSender.com.amdp.pdfsender
         public static String ORIENT = "ORIENT";
         public static String NOM_ADJ = "NOMBRE";
         public static String FORMATO = "FORMATO";
-        public static String IMAGEN_ADJUNTA = "IMAGEN-ADJUNTA";
+        public static String IMAGEN_EMAIL = "IMAGEN_EMAIL";
         public static String PDF_FORMATO = "PDF";
         public static String EXCEL_FORMATO = "XLSX";
 

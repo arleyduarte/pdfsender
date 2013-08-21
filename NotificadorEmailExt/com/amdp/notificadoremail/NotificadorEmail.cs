@@ -80,7 +80,7 @@ namespace com.amdp.notificadoremail
             client.Credentials = new System.Net.NetworkCredential(from, smtpSec.Network.Password);
             client.Port = smtpSec.Network.Port;
             client.Host = smtpSec.Network.Host;
-            client.EnableSsl = true; //Esto es para que vaya a través de SSL que es obligatorio con GMail
+            client.EnableSsl = false; //Esto es para que vaya a través de SSL que es obligatorio con GMail
 
 
             try

@@ -24,10 +24,10 @@ namespace PDFSender.com.amdp.pdfsender
        
             String imagenAdjunta = customerReport.ReportInfo.ImagenAdjunta;
 
-            if (imagenAdjunta != null && imagenAdjunta.Length > 0 && File.Exists(imagenAdjunta))
+            if (imagenAdjunta != null && File.Exists(imagenAdjunta))
             {
                 string html = customerReport.Body +
-                  "<br/><img src='cid:imagen' />";
+                  "<br /><img src='cid:imagen' />";
 
                 AlternateView htmlView =
                     AlternateView.CreateAlternateViewFromString(html,
@@ -43,9 +43,6 @@ namespace PDFSender.com.amdp.pdfsender
                 mail.Body = customerReport.Body;
             }
 
-
-
-            // Lo incrustamos en la vista HTML...
 
             asignarDestinatarios(customerReport, mail);
 
