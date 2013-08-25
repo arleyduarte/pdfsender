@@ -126,7 +126,17 @@ namespace PDFSender.com.amdp.utils
 
                 customerReport.ReportInfo = reportInfo;
                 customerReport.fillTextBody();
-                return true;
+
+                if (customerReport.ReportInfo.Destino.Length == 0)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+                
+                
 
             }
             catch (Exception exd)

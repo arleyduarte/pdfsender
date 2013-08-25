@@ -14,3 +14,21 @@ ERROR2013-08-20 10:17:25 – Error al enviar System.Net.Mail.SmtpException: The SM
    at System.Net.Mail.SmtpClient.Send(MailMessage message)
    at com.amdp.notificadoremail.NotificadorEmail.enviarMensajeRun() in D:\workspaceNet\TuLLanta\NotificadorEmailExt\com\amdp\notificadoremail\NotificadorEmail.cs:line 89
 INFO 2013-08-20 10:17:25 – ---------------------------------------------------
+INFO 2013-08-25 07:36:19 – ---------------------------------------------------
+WARN 2013-08-25 07:36:19 – Correo de Envio soporteamdp@gmail.com
+INFO 2013-08-25 07:36:19 – Reading the file: C:\Users\Arley\Downloads\PMAIL\PLAMAIL-12960-U2-20130816-110058
+INFO 2013-08-25 07:36:19 – El archivo PMAIL fue leido exitosamente
+INFO 2013-08-25 07:36:26 – El Reporte Excel fue construido exitosamente
+INFO 2013-08-25 07:36:26 – Dirección no valida: 
+INFO 2013-08-25 07:36:26 – Destino: arleymauricio@gmail.com
+INFO 2013-08-25 07:36:26 – CC: 
+INFO 2013-08-25 07:36:26 – Adjunto: C:\Users\Arley\Downloads\PMAIL\Reporte abc_198241.xlsx
+ERROR2013-08-25 07:36:28 – Error al enviar System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Must issue a STARTTLS command first. py4sm14142279pbc.14 - gsmtp
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, String from)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at com.amdp.notificadoremail.NotificadorEmail.enviarMensajeRun() in D:\workspaceNet\TuLLanta\NotificadorEmailExt\com\amdp\notificadoremail\NotificadorEmail.cs:line 89
+INFO 2013-08-25 07:36:28 – ---------------------------------------------------
+INFO 2013-08-25 07:36:37 – ---------------------------------------------------
+INFO 2013-08-25 07:36:37 – ---------------------------------------------------

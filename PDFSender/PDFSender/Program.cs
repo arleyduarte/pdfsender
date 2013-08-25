@@ -43,6 +43,7 @@ namespace PDFSender
         static void cleanDirectory()
         {
             fileManager.deleteFiles(Configuracion.Default.DESTINATION_FOLDER, "*.pdf");
+            fileManager.deleteFiles(Configuracion.Default.DESTINATION_FOLDER, "*.xlsx");
         }
 
 
